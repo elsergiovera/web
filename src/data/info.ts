@@ -80,7 +80,7 @@ export const info = {
     {
       title: "Vibia",
       isFeatured: true,
-      thumbnail: "web/assets/images/vibia.png",
+      thumbnail: "/web/assets/images/vibia.png",
       // githubUrl: "https://github.com/uzzii-21/astro-portfolio",
       liveUrl: "https://vibia.com/",
     },
