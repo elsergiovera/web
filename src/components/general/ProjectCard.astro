@@ -1,7 +1,12 @@
 ---
 import { IProjectDetails } from "@types";
 const { projectDetail } = Astro.props as IProjectDetails;
-const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
+const { title, name, hasPage, liveUrl, githubUrl } = projectDetail;
+
+const thumbnail = "/web/assets/images/" + name + ".png";
+const href = hasPage ? "/web/project" : (liveUrl ? liveUrl : githubUrl);
+const target = hasPage ? "_self" : "_blank";
+
 ---
 
 <article class="w-full max-h-[25rem] overflow-hidden relative group">
@@ -60,8 +65,8 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
     }
   </div>
   <a
-  href={liveUrl ? liveUrl : githubUrl}
-  target="_blank"
+  href={href}
+  target={target}
   >
     <img
     src={thumbnail}

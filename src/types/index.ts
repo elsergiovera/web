@@ -1,6 +1,5 @@
 export interface IMetaHead {
   description: string;
-  ogImageUrl: string;
 }
 
 export interface IHeroProps {
@@ -22,8 +21,10 @@ export interface IExperiences {
 
 export interface IProject {
   title: string;
+  name: string;
   isFeatured: boolean;
-  thumbnail: string;
+  hasPage: boolean;
+  description: string;
   githubUrl: string;
   liveUrl: string;
 }

@@ -9,6 +9,12 @@
 @tailwind utilities;
 
 /* ========== tailwind custom styles ========== */
+/* @layer utilities {
+  .hr {
+    border-color: LightGray;
+  }
+} */
+
 @layer components {
   body {
     @apply bg-light dark:bg-dark;
@@ -26,9 +32,13 @@
   }
   h1 {
     @apply text-6xl sm:text-8xl main-heading;
+    line-height: 1.2;
   }
   h2 {
     @apply text-xl font-semibold;
+  }
+  hr {
+    border-color: lightgray;
   }
   p,
   li,

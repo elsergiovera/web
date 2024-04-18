@@ -2,7 +2,7 @@
 import { IMetaHead } from "@types";
 import { info } from "@data";
 
-const { description, ogImageUrl } = Astro.props as IMetaHead;
+const { description } = Astro.props as IMetaHead;
 ---
 
 <meta charset="UTF-8" />
@@ -40,11 +40,6 @@ const { description, ogImageUrl } = Astro.props as IMetaHead;
 }
 {info.title && <meta property="og:title" content={`${info.title} - ${info.name}`} />}
 {description && <meta property="og:description" content={description} />}
-{
-  ogImageUrl && (
-    <meta property="og:image" content={`${info.baseUrl}${ogImageUrl}`} />
-  )
-}
 
 <!-- Twitter -->
 {info.title && <meta property="twitter:card" content="summary_large_image" />}
@@ -58,11 +53,6 @@ const { description, ogImageUrl } = Astro.props as IMetaHead;
 }
 {info.title && <meta property="twitter:title" content={`${info.title} - ${info.name}`} />}
 {description && <meta property="twitter:description" content={description} />}
-{
-  ogImageUrl && (
-    <meta property="twitter:image" content={`${info.baseUrl}${ogImageUrl}`} />
-  )
-}
 
 <!-- preload assests -->
 <link

@@ -20,18 +20,22 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
   <head>
     <MetaHead
       description={info.about}
-      ogImageUrl={"/web/assets/images/profile.png"}
     />
   </head>
 
   <body>
     <Layout>
       <Hero name={info.name} about={info.about} />
+      <hr />
       <section>
         <h2 class="w-[15rem] dark:text-light mt-16">FEATURED PROJECTS</h2>
         <ProjectsWrapper projects={featureProjects} />
       </section>
-      <Experience title={"EXPERIENCE"} details={info.experience} />
+      <hr />
+      <section>
+        <Experience title={"EXPERIENCE"} details={info.experience} />
+      </section>
+      <hr />
     </Layout>
   </body>
 </html>

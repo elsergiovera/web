@@ -1,27 +1,25 @@
 ---
 import { info } from "@data";
-
-import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
+import Project from "@components/general/Project.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import Layout from "@layouts/Layout.astro";
+import { IProjectDetails } from "@types";
 
-const Projects = info.projects.map((project) => project);
+const [ project ] = info.projects.filter((project) => project.name === "vibia");
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <MetaHead
-      title={"Projects"}
+      title={project.title}
       description={"All projects are available in this page."}
-      ogImageUrl={"/assets/images/profile.png"}
     />
   </head>
 
   <body>
     <Layout>
-      <h1 style="line-height: 1.2;">Projects</h1>
-      <ProjectsWrapper projects={Projects} />
+      <Project projectDetail={project} />
     </Layout>
   </body>
 </html>

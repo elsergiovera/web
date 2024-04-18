@@ -1,0 +1,17 @@
+---
+import { info } from "@data";
+
+import MetaHead from "@components/general/MetaHead.astro";
+import Layout from "@layouts/Layout.astro";
+import { IProjectDetails } from "@types";
+
+const { projectDetail } = Astro.props as IProjectDetails;
+---
+
+<>
+  <h1 style="line-height: 1.2;">{projectDetail.title}</h1>
+  <p class="dark:text-light text-lg mb-16">
+    {projectDetail.description}
+  </p>
+</>
+
