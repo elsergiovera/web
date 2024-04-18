@@ -87,7 +87,7 @@ export const info = {
     {
       title: "MyPoKéDeX",
       isFeatured: true,
-      thumbnail: "web/assets/images/pokedex.png",
+      thumbnail: "/assets/images/pokedex.png",
       githubUrl: "https://github.com/elsergiovera/pokedex",
       liveUrl: "https://elsergiovera.github.io/pokedex/",
     }
