@@ -1,5 +1,6 @@
 export const info = {
   baseUrl: "https://elsergiovera.github.io/web/",
+  title: "Portfolio",
   name: "Sergio Vera",
   jobDescription: "Full Stack Developer",
   about: `Computer Science Engineer with more than a decade of experience as a Full Stack Developer from Santiago, Chile.`,
@@ -81,13 +82,13 @@ export const info = {
       title: "Vibia",
       isFeatured: true,
       thumbnail: "/web/assets/images/vibia.png",
-      // githubUrl: "https://github.com/uzzii-21/astro-portfolio",
+      // githubUrl: "",
       liveUrl: "https://vibia.com/",
     },
     {
       title: "MyPoKéDeX",
       isFeatured: true,
-      thumbnail: "/assets/images/pokedex.png",
+      thumbnail: "/web/assets/images/pokedex.png",
       githubUrl: "https://github.com/elsergiovera/pokedex",
       liveUrl: "https://elsergiovera.github.io/pokedex/",
     }
