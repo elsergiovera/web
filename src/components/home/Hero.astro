@@ -1,11 +1,15 @@
 ---
 import { IHeroProps } from "@types";
+import "../../styles/style.css"
 
 const { name, about } = Astro.props as IHeroProps;
 ---
 
 <section>
-  <h1>{name}</h1>
+  <div>
+    <img src="/web/assets/images/profile.jpg" class="profile">
+    <h1>{name}</h1>
+  </div>
   <p class="dark:text-light text-lg mb-16">
     {about}
   </p>

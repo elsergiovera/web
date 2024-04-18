@@ -19,9 +19,11 @@
   body {
     @apply bg-light dark:bg-dark;
   }
+
   .container {
     @apply max-w-[800px] mx-auto px-4;
   }
+
   h1,
   h2,
   h3,
@@ -30,25 +32,62 @@
   h6 {
     @apply font-outfit;
   }
+
   h1 {
-    @apply text-6xl sm:text-8xl main-heading;
-    line-height: 1.2;
+    @apply sm:text-8xl main-heading;
+    line-height: 1.5em;
+    display: inline;
+    vertical-align: middle;
   }
+
   h2 {
     @apply text-xl font-semibold;
   }
+
   hr {
     border-color: gray;
-    /* border-left: 1px solid lightgray; */
-    /* border: none; */
-    /* height: 2rem; */
-    /* width: 0; */
   }
+
   p,
   li,
   a {
     @apply font-inter text-dark-gray;
   }
+
+  .profile {
+    width: 7em;
+    height: 7em;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline;
+    margin: 2em 0.5em;
+  }
+
+  @media (max-width: 651px) {
+    h1 {
+      @apply text-6xl
+    }
+
+    .profile {
+      width: 5em;
+      height: 5em;
+    }
+  }
+  @media (max-width: 500px) {
+    h1 {
+      @apply text-5xl;
+      line-height: 1.8em;
+    }
+    .profile {
+      display: none;
+    }
+  }
+  @media (max-width: 300px) {
+    .title {
+      display: none;
+    }
+  }
+
   .footer-icons {
     @apply dark:text-light flex items-center border border-dark dark:border-light p-4 rounded-lg justify-center;
   }
