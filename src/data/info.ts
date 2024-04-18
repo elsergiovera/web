@@ -1,97 +1,95 @@
 export const info = {
-  baseUrl: "https://astro-portfolio-uzair.vercel.app",
-  name: "Uzair Ahmed",
-  jobDescription: "Web Developer",
-  about: `I'm a software engineer based in Karachi, Pakistan.
-   I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-   I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-   I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-   I have successfully completed several web projects from scratch. 
-   Yet, I learn continuously and never stop exploring new technologies.
-   So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-   firebase and React Native with time.
-  `,
-
+  baseUrl: "https://elsergiovera.github.io/web/",
+  name: "Sergio Vera",
+  jobDescription: "Full Stack Developer",
+  about: `Computer Science Engineer with more than a decade of experience as a Full Stack Developer from Santiago, Chile.`,
   experience: [
     {
-      name: "InterNative Labs, LLC",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "Apr 2022",
+      name: "Vibia",
+      location: "Barcelona, Spain",
+      startDate: "July 2023",
       endDate: "Present",
       description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+        "• Development of Front End React web applications capable of 3D rendering, using Three.js and @react-three/drei libraries.",
+        "• Development of RESTful APIs with Node-RED low-code platform for fast development and intergration.",
+        "• Implementation and application of Test-Driven Development practices to ensure the reliability and robustness of the software.",
+        "• Implementation and application of Domain-Driven Design principles to design scalable and maintainable solutions.",
+        "• Pair programming sessions with CI/CD practices to improve overall code quality and deployment efficiency.",
       ],
     },
-
     {
-      name: "Coupon Approve (Remote)",
-      location: "Amsterdam, North Holland, Netherlands",
-      startDate: "Nov 2020",
-      endDate: "Apr 2022",
+      name: "Larrain Vial",
+      location: "Santiago, Chile",
+      startDate: "March 2019",
+      endDate: "March 2023",
       description: [
-        "✓ Developing code in accordance with appropriate design and architectural rules",
-        "✓ Documenting, testing, deployment, maintenance, support of platforms, applications, databases and solutions",
-        "✓ Help and training of other colleagues",
-        "✓ Others tasks connected to the nature of the job",
-        "✓ Code Improvements and Refactoring ",
-        "✓ Best Practices and Rules Maintainer",
+        "• Front End development using Microsoft .NET following MVC pattern with ASP.NET Razor, C# .NET, JavaScript, Ajax, jQuery, and Bootstrap.",
+        "• Back End development of SOAP Web Services and RESTful API using Microsoft .NET, with C# .NET, Entity Framework, Dapper ORM and LinQ.",
+        "• Development and maintenance of Stored Procedures in Microsoft SQL Server.",
       ],
     },
-
     {
-      name: "Interns Pakistan",
-      location: "Pakistan",
-      startDate: "Oct 2020",
-      endDate: "Nov 2020",
+      name: "Grupo HDI",
+      location: "Santiago, Chile",
+      startDate: "June 2017",
+      endDate: "February 2018",
       description: [
-        "An Immersive Internship Program that prepares me for the world's most in-demand career. A six weeks program completely based on learning and challenges.",
-        "The internship track is built by an industry expert that let develop the skills in the areas most important ",
+        "• Analysis and development of automation test using HPE Unified Functional Testing (UFT).",
+        "• Analysis and development of automation tests for websites using Eclipse, with Selenium Framework.",
       ],
     },
-  ],
-
-  education: [
     {
-      name: "Pakistan Institute of Professional Science & Technology (PIPS-TECH)",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2019",
-      endDate: "2022",
+      name: "Socofin S.A.",
+      location: "Santiago, Chile",
+      startDate: "June 2016",
+      endDate: "Auust 2016",
       description: [
-        "Diploma of Associate Engineering,  Computer Information Technology (CIT)",
+        "• Migration of services developed in FoxPro to Windows Services and Applications using Microsoft .NET, with C# .NET,VB .NET, LinQ, and Crystal Report.",
+        "• Migrations of procedures developed in FoxPro to stored procedures in Microsoft SQL Server and Oracle Database.",
       ],
     },
     {
-      name: "Govt. Degree Boys College Buffer Zone",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2018",
-      endDate: "2020",
-      description: ["Intermediate, Pre-Engineering"],
+      name: "Manager ERP",
+      location: "Santiago, Chile",
+      startDate: "June 2016",
+      endDate: "August 2016",
+      description: [
+        "• Migration of procedures developed in FoxPro to stored procedures in Microsoft SQL Server."
+      ],
     },
     {
-      name: "Ghazi Foundation Schools & Colleges",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2016",
-      endDate: "2018",
-      description: ["Matriculation,  Computer Science"],
+      name: "Componente Serviex",
+      location: "Santiago, Chile",
+      startDate: "June 2014",
+      endDate: "August 2015",
+      description: [
+        "• Front End development using Microsoft .NET with ASP.NET, C# .NET, VB .NET and JavaScript.",
+        "• Back End development of SOAP Web Services using Microsoft .NET, with C# .NET and VB .NET.",
+        "• Development and maintenance of Stored Procedures, Triggers, and Views in Microsoft SQL Server.",
+      ],
     },
   ],
 
   socialMedia: {
-    facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-    twitter: "https://twitter.com/Uzzii_21",
-    github: "https://github.com/uzzii-21",
-    email: "mailto:uzairahmed@74372gmail.com",
-    linkedin: "https://www.linkedin.com/in/uzzii21/",
+    github: "https://github.com/elsergiovera",
+    email: "mailto:verasergio@gmail.com",
+    linkedin: "https://www.linkedin.com/in/elsergiovera/",
   },
 
   projects: [
     {
-      title: "Astro Portfolio",
+      title: "Vibia",
       isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
+      thumbnail: "/assets/images/vibia.png",
+      // githubUrl: "https://github.com/uzzii-21/astro-portfolio",
+      liveUrl: "https://vibia.com/",
     },
+    {
+      title: "MyPoKéDeX",
+      isFeatured: true,
+      thumbnail: "/assets/images/pokedex.png",
+      githubUrl: "https://github.com/elsergiovera/pokedex",
+      liveUrl: "https://elsergiovera.github.io/pokedex/",
+    }
   ],
 };

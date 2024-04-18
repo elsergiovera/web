@@ -14,7 +14,7 @@
     @apply bg-light dark:bg-dark;
   }
   .container {
-    @apply max-w-[1112px] mx-auto px-4;
+    @apply max-w-[800px] mx-auto px-4;
   }
   h1,
   h2,
