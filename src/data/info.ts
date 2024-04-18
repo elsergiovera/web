@@ -80,14 +80,14 @@ export const info = {
     {
       title: "Vibia",
       isFeatured: true,
-      thumbnail: "/assets/images/vibia.png",
+      thumbnail: "web/assets/images/vibia.png",
       // githubUrl: "https://github.com/uzzii-21/astro-portfolio",
       liveUrl: "https://vibia.com/",
     },
     {
       title: "MyPoKéDeX",
       isFeatured: true,
-      thumbnail: "/assets/images/pokedex.png",
+      thumbnail: "web/assets/images/pokedex.png",
       githubUrl: "https://github.com/elsergiovera/pokedex",
       liveUrl: "https://elsergiovera.github.io/pokedex/",
     }
