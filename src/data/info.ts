@@ -1,6 +1,6 @@
 export const info = {
   baseUrl: "https://elsergiovera.github.io/web/",
-  title: "Portfolio",
+  title: "veraserg.io",
   name: "Sergio Vera",
   jobDescription: "Full Stack Developer",
   about: `Computer Science Engineer with more than a decade of experience as a Full Stack Developer from Santiago, Chile.`,
@@ -79,7 +79,7 @@ export const info = {
 
   projects: [
     {
-      title: "VIBIA",
+      title: "Vibia",
       name: "vibia",
       isFeatured: true,
       hasPage: true,

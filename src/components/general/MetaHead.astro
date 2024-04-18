@@ -27,8 +27,8 @@ const { description } = Astro.props as IMetaHead;
     <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />
   )
 }
-{info.title && <title>{`${info.title} - ${info.name}`}</title>}
-{info.title && <meta name="title" content={`${info.title} - ${info.name}`} />}
+{info.title && <title>{`${info.title} - portfolio`}</title>}
+{info.title && <meta name="title" content={`${info.title} - portfolio`} />}
 {description && <meta name="description" content={description} />}
 
 <!-- Open Graph / Facebook -->

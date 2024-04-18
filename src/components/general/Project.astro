@@ -1,8 +1,4 @@
 ---
-import { info } from "@data";
-
-import MetaHead from "@components/general/MetaHead.astro";
-import Layout from "@layouts/Layout.astro";
 import { IProjectDetails } from "@types";
 
 const { projectDetail } = Astro.props as IProjectDetails;
@@ -10,6 +6,11 @@ const { projectDetail } = Astro.props as IProjectDetails;
 
 <>
   <h1 style="line-height: 1.2;">{projectDetail.title}</h1>
+  <p class="mb-8">
+    <video controls disablepictureinpicture controlslist="nodownload noplaybackrate">
+      <source src="/web/assets/videos/video.mp4" type="video/mp4" />
+    </video>
+  </p>
   <p class="dark:text-light text-lg mb-16">
     {projectDetail.description}
   </p>

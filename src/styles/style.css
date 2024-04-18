@@ -38,7 +38,11 @@
     @apply text-xl font-semibold;
   }
   hr {
-    border-color: lightgray;
+    border-color: gray;
+    /* border-left: 1px solid lightgray; */
+    /* border: none; */
+    /* height: 2rem; */
+    /* width: 0; */
   }
   p,
   li,
