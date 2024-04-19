@@ -5,8 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://elsergiovera.github.io",
-  base: "/web",
+  site: "https://veraserg.io",
   integrations: [
     tailwind(),
     sitemap({

@@ -3,8 +3,8 @@ import { IProjectDetails } from "@types";
 const { projectDetail } = Astro.props as IProjectDetails;
 const { title, name, hasPage, liveUrl, githubUrl } = projectDetail;
 
-const thumbnail = "/web/assets/images/" + name + ".png";
-const href = hasPage ? "/web/project" : (liveUrl ? liveUrl : githubUrl);
+const thumbnail = "/assets/images/" + name + ".png";
+const href = hasPage ? "/project" : (liveUrl ? liveUrl : githubUrl);
 const target = hasPage ? "_self" : "_blank";
 
 ---

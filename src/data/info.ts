@@ -1,5 +1,5 @@
 export const info = {
-  baseUrl: "https://elsergiovera.github.io/web/",
+  baseUrl: "https://veraserg.io",
   title: "veraserg.io",
   name: "Sergio Vera",
   jobDescription: "Full Stack Developer",
