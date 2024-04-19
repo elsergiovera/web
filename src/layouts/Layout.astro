@@ -4,16 +4,16 @@ import Navbar from "@components/general/Navbar.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import "../styles/style.css";
 
-const { date, description, image, url, alt, tags } = Astro.props;
-const title = import.meta.env.SITE_TITLE
-// const headTitle = import.meta.env.SITE_TITLE
+const title = import.meta.env.SITE_TITLE;
+const { data } = Astro.props;
+
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <MetaHead
       title={title}
-      description={description}
+      description={data?.title ?? "home"}
     />
   </head>
 
