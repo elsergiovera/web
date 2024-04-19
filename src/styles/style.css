@@ -2,7 +2,7 @@
 @import "fonts.css";
 
 /* ========== import custom styles ========== */
-@import "custom-styles.css";
+/* @import "custom-styles.css"; */
 
 @tailwind base;
 @tailwind components;
@@ -34,7 +34,7 @@
   }
 
   h1 {
-    @apply sm:text-8xl main-heading;
+    @apply sm:text-8xl;
     line-height: 1.5em;
     display: inline;
     vertical-align: middle;
@@ -60,7 +60,34 @@
     overflow: hidden;
     border-radius: 50%;
     display: inline;
-    margin: 2em 0.5em;
+    margin: 2em 1.5em 2em 0;
+  }
+  .rainbow {
+    font-weight: 600;
+    background: linear-gradient(
+      89.81deg,
+      #9845e8 -1.72%,
+      #33d2ff 54.05%,
+      #dd5789 99.78%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 150% 150%;
+    animation: gradient 6s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   @media (max-width: 651px) {
