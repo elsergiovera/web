@@ -1,15 +1,16 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import mdx from '@astrojs/mdx';
+import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://veraserg.io",
-  port: "8000",
   integrations: [
-    mdx(),
-    tailwind(),
-    sitemap(),
-  ]
+  tailwind(),
+  mdx(),
+  sitemap(),
+  robotsTxt(),
+  tailwind()]
 });

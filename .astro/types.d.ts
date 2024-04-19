@@ -136,13 +136,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"projects": {
-"vibia.md": {
-	id: "vibia.md";
+"vibia.mdx": {
+	id: "vibia.mdx";
   slug: "vibia";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 };
 
 	};
@@ -153,5 +153,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../src/content/config.js");
+	export type ContentConfig = typeof import("./../src/content/config.js");
 }

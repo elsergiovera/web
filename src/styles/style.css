@@ -35,20 +35,25 @@
 
   h1 {
     @apply sm:text-8xl;
+    /* font-weight: 600; */
     line-height: 1.5em;
     display: inline;
     vertical-align: middle;
   }
-
   h2 {
-    @apply text-xl font-semibold;
+    @apply text-7xl font-thin;
+  }
+  h3 {
+    @apply text-xl
   }
 
   hr {
     border-color: gray;
   }
 
-  p,
+  p {
+    @apply my-2;
+  }
   li,
   a {
     @apply font-inter text-dark-gray;
@@ -63,7 +68,7 @@
     margin: 2em 1.5em 2em 0;
   }
   .rainbow {
-    font-weight: 600;
+    /* font-weight: 600; */
     background: linear-gradient(
       89.81deg,
       #9845e8 -1.72%,

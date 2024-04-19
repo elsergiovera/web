@@ -1,11 +1,11 @@
 ---
 import { info } from "@data";
 
-import LayoutComponent from "@layouts/Layout.astro";
-import HeroComponent from "@components/home/Hero.astro";
-import ExperienceComponent from "@components/home/Experience.astro";
-import ProjectsWrapperComponent from "@components/general/ProjectsWrapper.astro";
-import MetaHeadComponent from "@components/general/MetaHead.astro";
+import Layout from "@layouts/Layout.astro";
+import Hero from "@components/home/Hero.astro";
+import Experience from "@components/home/Experience.astro";
+import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
+import MetaHead from "@components/general/MetaHead.astro";
 
 const featureProjects = info.projects.reduce((accumulator, project) => {
   if (accumulator.length < 6 && project.isFeatured) {
@@ -15,24 +15,13 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
 }, []);
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <MetaHeadComponent
-      description={info.about}
-    />
-  </head>
-
-  <body>
-    <LayoutComponent>
-      <HeroComponent name={info.name} about={info.about} />
-      <section>
-        <h2 class="w-[15rem] dark:text-light mt-14">FEATURED PROJECTS</h2>
-        <ProjectsWrapperComponent projects={featureProjects} />
-      </section>
-      <section>
-        <ExperienceComponent title={"EXPERIENCE"} details={info.experience} />
-      </section>
-    </LayoutComponent>
-  </body>
-</html>
+<Layout>
+  <Hero name={info.name} about={info.about} />
+  <section>
+    <h3 class="w-[15rem] dark:text-light mt-14">FEATURED PROJECTS</h3>
+    <ProjectsWrapper projects={featureProjects} />
+  </section>
+  <section>
+    <Experience title={"EXPERIENCE"} details={info.experience} />
+  </section>
+</Layout>
