@@ -3,7 +3,7 @@ export const info = {
   title: "veraserg.io",
   name: "Sergio Vera",
   jobDescription: "Full Stack Developer",
-  about: `A Computer Science Engineer degree with more than a decade of experience as a Full Stack Developer.`,
+  about: `A Computer Science Engineer degree with more than a decade of experience as a Full Stack Developer from Santiago, Chile.`,
   experience: [
     {
       name: "Vibia",
