@@ -15,8 +15,6 @@ import { info } from "@data";
   const browserTheme = document.querySelector('[name="theme-color"]');
   let isDark;
 
-  console.log("browserTheme", browserTheme);
-
   // THEME
   const theme = (() => {
       if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
