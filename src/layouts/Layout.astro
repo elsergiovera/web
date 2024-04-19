@@ -1,11 +1,13 @@
 ---
-import Footer from "@components/general/Footer.astro";
-import Navbar from "@components/general/Navbar.astro";
+import FooterComponent from "@components/general/Footer.astro";
+import NavbarComponent from "@components/general/Navbar.astro";
 import "../styles/style.css";
 ---
 
-<Navbar />
-<main class="container">
-  <slot />
-</main>
-<Footer />
+<NavbarComponent />
+  <main class="container">
+    <span class="dark:text-light">
+      <slot />
+    </span>
+  </main>
+<FooterComponent />

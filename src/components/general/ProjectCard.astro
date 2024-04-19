@@ -4,7 +4,7 @@ const { projectDetail } = Astro.props as IProjectDetails;
 const { title, name, hasPage, liveUrl, githubUrl } = projectDetail;
 
 const thumbnail = "/assets/images/" + name + ".png";
-const href = hasPage ? "/project" : (liveUrl ? liveUrl : githubUrl);
+const href = hasPage ? "/projects/" + name : (liveUrl ? liveUrl : githubUrl);
 const target = hasPage ? "_self" : "_blank";
 
 ---

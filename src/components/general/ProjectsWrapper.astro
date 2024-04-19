@@ -1,11 +1,11 @@
 ---
 import { IProjects } from "@types";
-import ProjectCard from "./ProjectCard.astro";
+import ProjectCardComponent from "./ProjectCard.astro";
 
 const { projects } = Astro.props as IProjects;
 ---
 
 <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-14">
-  {projects.map((project) => <ProjectCard projectDetail={project} />)}
+  {projects.map((project) => <ProjectCardComponent projectDetail={project} />)}
 </div>
 <hr />

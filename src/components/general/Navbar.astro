@@ -15,6 +15,8 @@ import { info } from "@data";
   const browserTheme = document.querySelector('[name="theme-color"]');
   let isDark;
 
+  console.log("browserTheme", browserTheme);
+
   // THEME
   const theme = (() => {
       if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
@@ -29,12 +31,14 @@ import { info } from "@data";
       document.documentElement.setAttribute("data-theme", "light");
       isDark = true;
       themeButton.innerHTML = moonIcon;
-      browserTheme.content = "#FFFFFF";
+      if (browserTheme)
+        browserTheme.content = "#FFFFFF";
   } else {
       document.documentElement.setAttribute("data-theme", "dark");
       isDark = false;
       themeButton.innerHTML = sunIcon;
-      browserTheme.content = "#111111";
+      if (browserTheme)
+        browserTheme.content = "#111111";
   }
   const darkModeHandler = () => {
       if (isDark) {
@@ -42,13 +46,15 @@ import { info } from "@data";
           localStorage.theme = "dark";
           isDark = false;
           themeButton.innerHTML = sunIcon;
-          browserTheme.content = "#111111";
+        if (browserTheme)
+            browserTheme.content = "#111111";
       } else {
           document.documentElement.setAttribute("data-theme", "light");
           localStorage.theme = "light";
           isDark = true;
           themeButton.innerHTML = moonIcon;
-          browserTheme.content = "#FFFFFF";
+        if (browserTheme)
+            browserTheme.content = "#FFFFFF";
       }
   };
   window.localStorage.setItem("theme", theme);
