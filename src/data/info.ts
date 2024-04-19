@@ -94,7 +94,7 @@ export const info = {
       hasPage: false,
       description: "",
       githubUrl: "https://github.com/elsergiovera/pokedex",
-      liveUrl: "https://elsergiovera.github.io/pokedex/",
+      liveUrl: "https://pokedex.veraserg.io",
     }
   ],
 };
