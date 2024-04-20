@@ -81,7 +81,7 @@
   }
   @media (max-width: 650px) {
     h1 {
-      @apply text-7xl
+      @apply text-6xl
     }
     h2 {
       @apply text-6xl
@@ -94,8 +94,7 @@
   }
   @media (max-width: 500px) {
     h1 {
-      @apply text-6xl;
-      line-height: 1.8em;
+      @apply text-5xl tracking-tight;
     }
     h2 {
       @apply text-5xl;
@@ -105,21 +104,27 @@
       width: 1.85rem;
       height: 1.85rem;
     }
+    .profile {
+      width: 6em;
+      height: 6em;
+    }
     #nav-separator {
       @apply h-4;
     }
-    .profile {
-      /* width: 7em;
-      height: 7em; */
-    }
   }
-  @media (max-width: 350px) {
+  @media (max-width: 360px) {
     #github-button,
     #linkedIn-button,
     /* #email-button, */
     /* #theme-button, */
+    /* #hero-im, */
+    .profile ,
     .nav-separator {
       display: none;
+    }
+
+    h1 {
+      @apply text-4xl;
     }
   }
 }
