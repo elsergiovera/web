@@ -13,7 +13,7 @@
     vertical-align: middle;
   }
   h2 {
-    @apply font-outfit font-thin sm:text-7xl mb-8;
+    @apply font-outfit font-thin sm:text-8xl mb-8;
   }
   h3 {
     @apply text-2xl
@@ -71,12 +71,12 @@
       background-position: 0% 50%;
     }
   }
-  @media (max-width: 651px) {
+  @media (max-width: 650px) {
     h1 {
       @apply text-7xl
     }
     h2 {
-      @apply text-5xl
+      @apply text-6xl
     }
 
     .profile {
@@ -90,14 +90,14 @@
       line-height: 1.8em;
     }
     h2 {
-      @apply text-4xl;
+      @apply text-5xl;
     }
     .profile {
       display: none;
     }
   }
   @media (max-width: 300px) {
-    .title, h2 {
+    .navbar-buttons, h2 {
       display: none;
     }
   }

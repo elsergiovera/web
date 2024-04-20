@@ -73,15 +73,15 @@ import { info } from "@info";
 </script>
 
 <header
-  class="container flex items-center justify-between h-[80px] sm:h-[123px]"
+  class="container flex items-center justify-between h-[80px] sm:h-[123px] sm:flex-row"
 >
   <a
-    class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit title"
+    class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
     href="/">
     {info.title}
   </a>
   <nav>
-    <ul class="flex items-center">
+    <ul class="flex items-center navbar-buttons">
       <li>
         <button
           id="github-button"
@@ -100,10 +100,8 @@ import { info } from "@info";
           class="dark:text-light rounded-lg p-3 ml-1 bg-slate-100 dark:bg-[#202020]"
         ></button>
       </li>
-      &nbsp;&nbsp;
-      <li>
-        <hr style="border: none; border-left: 1px solid gray; height: 2em; width: 0;"/>
-
+      <li class="navbar-buttons">
+        <hr class="ml-2" style="border: none; border-left: 1px solid gray; height: 2em; width: 0;"/>
       </li>
       <li>
         <button
