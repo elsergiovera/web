@@ -8,7 +8,7 @@
   }
   h1 {
     @apply font-outfit font-thin sm:text-8xl;
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     display: inline;
     vertical-align: middle;
   }
@@ -124,7 +124,7 @@
     }
 
     h1 {
-      @apply text-4xl;
+      line-height: 2em;
     }
   }
 }
