@@ -11,11 +11,9 @@ const { experience } = Astro.props
           <div class="flex justify-between items-center flex-wrap">
             <span class="font-semibold text-xl">{xp.name}</span>
 
-            <p class="text-sm dark:text-gray">
-              {xp.start} - {xp.end}
-            </p>
+            <span class="text-sm dark:text-gray my-2">{xp.start} - {xp.end}</span>
           </div>
-          <p class="text-sm mt-0 text-blue">{xp.location}</p>
+          <div class="text-sm mt-0 mb-2 text-blue">{xp.location}</div>
 
           <ul class="mt-4">
             {xp.description.map((xp) => (

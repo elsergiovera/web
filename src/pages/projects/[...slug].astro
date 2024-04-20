@@ -12,21 +12,18 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const path_segment = import.meta.env.SITE_PATH_SEGMENT;
+const title = `${entry.collection} ${path_segment} ${entry.data.name}`
 ---
 
-<Layout subtitle={entry.data.name}>
+<Layout subtitle={title}>
   <h2 class="rainbow mt-6 mb-4">{entry.data.title}</h2>
 
   <div class="mb-8">
-    {entry.data.video
-      ? <video width="100%" height="100%" controlslist="nodownload noplaybackrate" controls disablepictureinpicture autoplay>
-          <source src={`/projects/${entry.data.name}.mp4`} type="video/mp4" />
-      </video>
-      : <ProjectCard project={entry} hyperlink={false} />
-    }
+    <ProjectCard project={entry} hyperlink={false} />
   </div>
 
-  <div class="dark:text-light">
+  <div class="dark:text-light leading-relaxed">
     <Content />
   </div>
 </Layout>

@@ -2,6 +2,7 @@
 import { info } from "@info";
 
 const { title, description } = Astro.props;
+const path_segment = import.meta.env.SITE_PATH_SEGMENT ?? "-";
 ---
 
 <meta charset="UTF-8" />
@@ -24,8 +25,8 @@ const { title, description } = Astro.props;
     <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />
   )
 }
-{title && <title>{`${title} - ${description}`}</title>}
-{title && <meta name="title" content={`${title} - ${description}`} />}
+{title && <title>{`${title} ${path_segment} ${description}`}</title>}
+{title && <meta name="title" content={`${title} ${path_segment} ${description}`} />}
 {description && <meta name="description" content={description} />}
 
 <!-- Open Graph / Facebook -->
@@ -35,7 +36,7 @@ const { title, description } = Astro.props;
     <meta property="og:url" content={`${info.baseUrl}${Astro.url.pathname}`} />
   )
 }
-{title && <meta property="og:title" content={`${title} - ${info.name}`} />}
+{title && <meta property="og:title" content={`${title} ${path_segment} ${info.name}`} />}
 {description && <meta property="og:description" content={description} />}
 
 <!-- Twitter -->
@@ -48,7 +49,7 @@ const { title, description } = Astro.props;
     />
   )
 }
-{title && <meta property="twitter:title" content={`${title} - ${info.name}`} />}
+{title && <meta property="twitter:title" content={`${title} ${path_segment} ${info.name}`} />}
 {description && <meta property="twitter:description" content={description} />}
 
 <!-- preload assests -->
