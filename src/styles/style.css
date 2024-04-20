@@ -24,7 +24,7 @@
   }
 
   p {
-    @apply my-12;
+    @apply my-8;
   }
   li,
   a {
@@ -55,6 +55,16 @@
     background-clip: text;
     background-size: 150% 150%;
     animation: gradient 6s ease infinite;
+  }
+  .nav-button {
+    @apply dark:text-light dark:bg-[#202020] rounded-lg p-3 ml-1 bg-slate-100 
+  }
+  .nav-separator {
+    @apply ml-2 mr-1 h-8 w-0;
+    border: none; border-left: 1px solid gray;
+  }
+  .card {
+    @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];
   }
 
   /* functions */
@@ -96,9 +106,12 @@
       display: none;
     }
   }
-  @media (max-width: 300px) {
-    .navbar-buttons, h2 {
-      display: none;
+  @media (max-width: 350px) {
+    .nav-button {
+      @apply w-8 h-8 p-2
+    }
+    .nav-separator {
+      @apply h-4
     }
   }
 }
