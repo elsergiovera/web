@@ -29,7 +29,7 @@
     @apply font-inter text-dark-gray;
   }
 
-  /* classes */
+  /* classes and id's */
   .container {
     @apply max-w-[800px] mx-auto px-4;
   }
@@ -100,12 +100,12 @@
     h2 {
       @apply text-5xl;
     }
-    .nav-button {
+    .nav-button, #theme-button {
       @apply p-2;
       width: 1.85rem;
       height: 1.85rem;
     }
-    .nav-separator {
+    #nav-separator {
       @apply h-4;
     }
     .profile {
@@ -113,9 +113,10 @@
     }
   }
   @media (max-width: 350px) {
-    .nav-button {
-      display: none;
-    }
+    #github-button,
+    #linkedIn-button,
+    /* #email-button, */
+    /* #theme-button, */
     .nav-separator {
       display: none;
     }
