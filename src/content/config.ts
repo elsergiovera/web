@@ -5,14 +5,12 @@ import { z, defineCollection } from "astro:content";
 const projectsCollection = defineCollection({
     type: 'content',
     schema: z.object({
+      name: z.string(),
       title: z.string(),
-      date: z.date(),
-      description: z.string(),
-      image: z.object({
-        url: z.string(),
-        alt: z.string()
-      }),
-      tags: z.array(z.string())
+      isFeatured: z.boolean(),
+      url: z.string(),
+      github: z.string(),
+      video: z.boolean()
     })
 });
 

@@ -76,25 +76,4 @@ export const info = {
     email: "mailto:verasergio@gmail.com",
     linkedin: "https://www.linkedin.com/in/elsergiovera/",
   },
-
-  projects: [
-    {
-      title: "Vibia",
-      name: "vibia",
-      isFeatured: true,
-      hasPage: true,
-      description: "3D scene compositor created in React, with Three.js.",
-      githubUrl: "",
-      liveUrl: "https://vibia.com/",
-    },
-    {
-      title: "MyPoKéDeX",
-      name: "pokedex",
-      isFeatured: true,
-      hasPage: false,
-      description: "",
-      githubUrl: "https://github.com/elsergiovera/pokedex",
-      liveUrl: "https://pokedex.veraserg.io",
-    }
-  ],
 };

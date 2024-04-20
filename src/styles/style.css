@@ -1,30 +1,12 @@
-/* ========== import font source ========== */
 @import "fonts.css";
-
-/* ========== import custom styles ========== */
-/* @import "custom-styles.css"; */
-
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind components; */
+/* @tailwind utilities; */
 
-/* ========== tailwind custom styles ========== */
-/* @layer utilities {
-  .hr {
-    border-color: LightGray;
-  }
-} */
-
-@layer components {
+@layer base {
   body {
     @apply bg-light dark:bg-dark;
   }
-
-  .container {
-    @apply max-w-[800px] mx-auto px-4;
-  }
-
-  h1,
   h2,
   h3,
   h4,
@@ -32,9 +14,8 @@
   h6 {
     @apply font-outfit;
   }
-
   h1 {
-    @apply sm:text-8xl;
+    @apply font-outfit sm:text-8xl;
     /* font-weight: 600; */
     line-height: 1.5em;
     display: inline;
@@ -59,6 +40,9 @@
     @apply font-inter text-dark-gray;
   }
 
+  .container {
+    @apply max-w-[800px] mx-auto px-4;
+  }
   .profile {
     width: 7em;
     height: 7em;
@@ -68,7 +52,6 @@
     margin: 2em 1.5em 2em 0;
   }
   .rainbow {
-    /* font-weight: 600; */
     background: linear-gradient(
       89.81deg,
       #9845e8 -1.72%,
@@ -81,6 +64,7 @@
     background-size: 150% 150%;
     animation: gradient 6s ease infinite;
   }
+
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -94,7 +78,6 @@
       background-position: 0% 50%;
     }
   }
-
   @media (max-width: 651px) {
     h1 {
       @apply text-7xl
@@ -118,9 +101,5 @@
     .title {
       display: none;
     }
-  }
-
-  .footer-icons {
-    @apply dark:text-light flex items-center border border-dark dark:border-light p-4 rounded-lg justify-center;
   }
 }

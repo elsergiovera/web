@@ -1,20 +1,16 @@
 ---
 import { IProjectDetails } from "@types";
-const { projectDetail } = Astro.props as IProjectDetails;
-const { title, name, hasPage, liveUrl, githubUrl } = projectDetail;
-
-const thumbnail = "/assets/images/" + name + ".png";
-const href = hasPage ? "/projects/" + name : (liveUrl ? liveUrl : githubUrl);
-const target = hasPage ? "_self" : "_blank";
-
+const { project } = Astro.props as IProjectDetails;
+const { title, name, url, github } = project.data;
+const img = `/assets/images/${name}.png`;
 ---
 
 <article class="w-full max-h-[25rem] overflow-hidden relative group">
   <div class="flex items-center absolute right-4 top-4 z-10">
     {
-      githubUrl && (
+      github && (
         <a
-          href={githubUrl}
+          href={github}
           class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
           aria-label="Social Media"
           target="_blank"
@@ -38,9 +34,9 @@ const target = hasPage ? "_self" : "_blank";
     }
 
     {
-      liveUrl && (
+      url && (
         <a
-          href={liveUrl}
+          href={url}
           class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
           aria-label="Social Media"
           target="_blank"
@@ -65,11 +61,11 @@ const target = hasPage ? "_self" : "_blank";
     }
   </div>
   <a
-  href={href}
-  target={target}
+  href={`/projects/${name}`}
+  target={"_self"}
   >
     <img
-    src={thumbnail}
+    src={img}
     class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
     loading="lazy"
     width="100%"

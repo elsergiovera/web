@@ -1,11 +1,17 @@
 ---
-import { IProjects } from "@types";
 import ProjectCard from "./ProjectCard.astro";
+import { getCollection } from "astro:content";
 
-const { projects } = Astro.props as IProjects;
+const projects = await getCollection('projects');
+let projectsFeatured = [];
+
+projects.map((project) => {
+  if(project.data.isFeatured)
+    projectsFeatured.push(project);
+})
 ---
 
 <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-14">
-  {projects.map((project) => <ProjectCard projectDetail={project} />)}
+  {projectsFeatured.map((project) => <ProjectCard project={project} />)}
 </div>
 <hr />
