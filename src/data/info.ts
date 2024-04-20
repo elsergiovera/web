@@ -2,6 +2,7 @@ export const info = {
   baseUrl: "https://veraserg.io",
   title: "veraserg.io",
   name: "Sergio Vera",
+  about: `A Computer Science Engineer degree with more than a decade of experience as a Full Stack Developer from Santiago, Chile.`,
   socialMedia: {
     github: "https://github.com/elsergiovera",
     email: "mailto:verasergio@gmail.com",

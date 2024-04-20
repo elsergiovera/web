@@ -5,7 +5,7 @@ import MetaHead from "@components/general/MetaHead.astro";
 import "../styles/style.css";
 
 const title = import.meta.env.SITE_TITLE;
-const { data } = Astro.props;
+const { subtitle } = Astro.props;
 
 ---
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ const { data } = Astro.props;
   <head>
     <MetaHead
       title={title}
-      description={data?.title ?? "home"}
+      description={subtitle ?? "home"}
     />
   </head>
 

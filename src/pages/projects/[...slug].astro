@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from "@layouts/Layout.astro";
+import ProjectCard from '@components/general/ProjectCard.astro';
 
 export async function getStaticPaths() {
   const projectsEntries = await getCollection('projects');
@@ -11,7 +12,19 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+console.log("entry", entry.data)
 ---
-<Layout data={entry.data}>
-    <Content />
+<Layout subtitle={entry.data.name}>
+  <h2 class="rainbow">{entry.data.title}</h2>
+
+  {entry.data.video
+    ? <video width="100%" height="100%" controls disablepictureinpicture controlslist="nodownload noplaybackrate">
+        <source src=`/assets/videos/${entry.data.name}.mp4` type="video/mp4" />
+    </video>
+    : <ProjectCard project={entry} link={false} />
+
+  }
+
+  <Content />
 </Layout>
