@@ -34,8 +34,8 @@
     @apply max-w-[800px] mx-auto px-4;
   }
   .profile {
-    width: 7em;
-    height: 7em;
+    width: 8em;
+    height: 8em;
     overflow: hidden;
     border-radius: 50%;
     display: inline;
@@ -88,8 +88,8 @@
     }
 
     .profile {
-      width: 5em;
-      height: 5em;
+      width: 7em;
+      height: 7em;
     }
   }
   @media (max-width: 500px) {
@@ -109,7 +109,8 @@
       @apply h-4;
     }
     .profile {
-      display: none;
+      /* width: 7em;
+      height: 7em; */
     }
   }
   @media (max-width: 350px) {
