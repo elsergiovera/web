@@ -3,12 +3,9 @@ import ProjectCard from "./ProjectCard.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection('projects');
-let projectsFeatured = [];
-
-projects.map((project) => {
-  if(project.data.isFeatured)
-    projectsFeatured.push(project);
-})
+const projectsFeatured = projects
+  .filter(project => project.data.isFeatured)
+  .sort((a, b) => a.data.id - b.data.id)
 ---
 
 <div class=" dark:text-light">
