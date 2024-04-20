@@ -1,9 +1,8 @@
 @import "fonts.css";
 @tailwind base;
-/* @tailwind components; */
-/* @tailwind utilities; */
 
 @layer base {
+  /* tags */
   body {
     @apply bg-light dark:bg-dark;
   }
@@ -17,7 +16,7 @@
     @apply font-outfit font-thin sm:text-7xl mb-8;
   }
   h3 {
-    @apply text-xl
+    @apply text-2xl
   }
 
   hr {
@@ -32,6 +31,7 @@
     @apply font-inter text-dark-gray;
   }
 
+  /* classes */
   .container {
     @apply max-w-[800px] mx-auto px-4;
   }
@@ -57,6 +57,7 @@
     animation: gradient 6s ease infinite;
   }
 
+  /* functions */
   @keyframes gradient {
     0% {
       background-position: 0% 50%;

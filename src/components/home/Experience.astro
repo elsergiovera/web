@@ -6,17 +6,19 @@ const { experience } = Astro.props as IExperiences;
 
 <div class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
   <h3 class="w-[15rem] mt-12">EXPERIENCE</h3>
-  <div class="w-full">
+  <div class="w-full mt-12">
     {
       experience.map((xp) => (
-        <div class="mt-11 mb-14">
+        <div class="mb-12">
           <div class="flex justify-between items-center flex-wrap">
-            <h3 class="font-semibold">{xp.name}</h3>
+            <span class="font-semibold text-xl">{xp.name}</span>
+
             <p class="text-sm dark:text-gray">
               {xp.start} - {xp.end}
             </p>
           </div>
           <p class="text-sm mt-0 text-blue">{xp.location}</p>
+
           <ul class="mt-4">
             {xp.description.map((xp) => (
               <li class="dark:text-gray leading-relaxed">{xp}</li>
