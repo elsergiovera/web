@@ -17,7 +17,9 @@ const title = `${entry.collection} ${path_segment} ${entry.data.name}`
 ---
 
 <Layout subtitle={title}>
-  <h2 class="rainbow mt-6 mb-4">{entry.data.title}</h2>
+  <div class="mt-6 mb-4">
+    <h1 class="rainbow">{entry.data.title}</h>
+  </div>
 
   <div class="mb-8">
     <ProjectCard project={entry} hyperlink={false} />

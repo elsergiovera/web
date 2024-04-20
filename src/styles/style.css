@@ -8,14 +8,10 @@
   }
   h1 {
     @apply font-outfit font-thin sm:text-8xl;
-    /* line-height: 1.5em; */
     display: inline;
     vertical-align: middle;
   }
   h2 {
-    @apply font-outfit font-thin sm:text-8xl mb-8;
-  }
-  h3 {
     @apply text-2xl
   }
   hr {
@@ -83,9 +79,6 @@
     h1 {
       @apply text-6xl
     }
-    h2 {
-      @apply text-6xl
-    }
 
     .profile {
       width: 7em;
@@ -95,9 +88,6 @@
   @media (max-width: 500px) {
     h1 {
       @apply text-5xl tracking-tight;
-    }
-    h2 {
-      @apply text-5xl;
     }
     .nav-button, #theme-button {
       @apply p-2;
