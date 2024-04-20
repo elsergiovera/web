@@ -1,8 +1,10 @@
 ---
-import { IProjectDetails } from "@types";
-const { project, big } = Astro.props as IProjectDetails;
+import { Image } from "astro:assets";
+
+const { project, big,  } = Astro.props;
 const { title, name, url, github } = project.data;
-const img = `/assets/images/${name}.png`;
+const img = `/projects/${name}.png`;
+const link = `/projects/${name}`;
 ---
 
 <article class="w-full max-h-[25rem] overflow-hidden relative group">
@@ -64,25 +66,25 @@ const img = `/assets/images/${name}.png`;
   {
     big ? (
       <a
-        href={`/projects/${name}`}
+        href={link}
         target={"_self"}
         >
-          <img
-          src={img}
-          class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
-          loading="lazy"
-          width="100%"
-          height="100%"
-          alt="featureImage"
+          <Image
+            src={img}
+            class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
+            loading="eager"
+            width="20"
+            height="20"
+            alt="featureImage"
         />
       </a>
       ) : (
-      <img
+      <Image
         src={img}
         class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
-        loading="lazy"
-        width="100%"
-        height="100%"
+        loading="eager"
+        width="20"
+            height="20"
         alt="featureImage"
       />
     )

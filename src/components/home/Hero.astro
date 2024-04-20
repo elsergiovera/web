@@ -1,14 +1,14 @@
 ---
-import { IHeroProps } from "@types";
-import "../../styles/style.css"
+import { Image } from "astro:assets";
+import profile from "@img/profile2.jpg";
 
-const { name, about } = Astro.props as IHeroProps;
+const { name, about } = Astro.props;
 ---
 
 <section>
   <div>
-    <img src="/assets/images/profile2.jpg" class="profile">
-    <h1 class="dark:text-light">I'm <span class="rainbow font-medium">Sergio</span>,</h1>
+    <Image src={profile} loading="eager" alt="" class="profile" />
+    <h1 class="dark:text-light">I'm <span class="rainbow font-medium">{name.split(' ')[0]}</span>,</h1>
   </div>
   <p class="dark:text-light text-lg mb-14">
     {about}

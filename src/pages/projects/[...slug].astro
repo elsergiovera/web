@@ -21,7 +21,7 @@ console.log("entry", entry.data)
 
   <div class="mb-8">
     {entry.data.video
-      ? <video width="100%" height="100%" controls disablepictureinpicture controlslist="nodownload noplaybackrate">
+      ? <video width="100%" height="100%" controls disablepictureinpicture autoplay controlslist="nodownload noplaybackrate">
           <source src=`/assets/videos/${entry.data.name}.mp4` type="video/mp4" />
       </video>
       : <ProjectCard project={entry} link={false} />
