@@ -18,11 +18,9 @@
   h3 {
     @apply text-2xl
   }
-
   hr {
     border-color: gray;
   }
-
   p {
     @apply my-8;
   }
@@ -102,16 +100,24 @@
     h2 {
       @apply text-5xl;
     }
+    .nav-button {
+      @apply p-2;
+      width: 1.85rem;
+      height: 1.85rem;
+    }
+    .nav-separator {
+      @apply h-4;
+    }
     .profile {
       display: none;
     }
   }
   @media (max-width: 350px) {
     .nav-button {
-      @apply w-8 h-8 p-2
+      display: none;
     }
     .nav-separator {
-      @apply h-4
+      display: none;
     }
   }
 }
