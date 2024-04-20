@@ -18,13 +18,16 @@ console.log("entry", entry.data)
 <Layout subtitle={entry.data.name}>
   <h2 class="rainbow">{entry.data.title}</h2>
 
-  {entry.data.video
-    ? <video width="100%" height="100%" controls disablepictureinpicture controlslist="nodownload noplaybackrate">
-        <source src=`/assets/videos/${entry.data.name}.mp4` type="video/mp4" />
-    </video>
-    : <ProjectCard project={entry} link={false} />
+  <div class="mb-8">
+    {entry.data.video
+      ? <video width="100%" height="100%" controls disablepictureinpicture controlslist="nodownload noplaybackrate">
+          <source src=`/assets/videos/${entry.data.name}.mp4` type="video/mp4" />
+      </video>
+      : <ProjectCard project={entry} link={false} />
+    }
+  </div>
 
-  }
-
-  <Content />
+  <div class="dark:text-light">
+    <Content />
+  </div>
 </Layout>
