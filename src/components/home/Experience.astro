@@ -16,10 +16,10 @@ const { experience } = Astro.props as IExperiences;
               {xp.start} - {xp.end}
             </p>
           </div>
-          <p class="text-sm mt-3 text-blue">{xp.location}</p>
-          <ul class="mt-3">
+          <p class="text-sm mt-0 text-blue">{xp.location}</p>
+          <ul class="mt-4">
             {xp.description.map((xp) => (
-              <li class="dark:text-gray">{xp}</li>
+              <li class="dark:text-gray leading-relaxed">{xp}</li>
             ))}
           </ul>
         </div>
