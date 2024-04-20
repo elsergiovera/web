@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 
-const { project, big,  } = Astro.props;
+const { project, hyperlink } = Astro.props;
 const { title, name, url, github } = project.data;
 const img = `/projects/${name}.png`;
 const link = `/projects/${name}`;
@@ -64,7 +64,7 @@ const link = `/projects/${name}`;
   </div>
   
   {
-    big ? (
+    hyperlink ? (
       <a
         href={link}
         target={"_self"}
@@ -91,7 +91,7 @@ const link = `/projects/${name}`;
   }
 
   {
-    big && (
+    hyperlink && (
       <div class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700">
         {title}
       </div> 
