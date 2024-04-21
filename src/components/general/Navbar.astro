@@ -103,15 +103,10 @@ const { title } = Astro.props;
 
   // BUTTONS
   githubButton.innerHTML = svg(githubIcon);
-  githubButton.addEventListener("click", () => openLink("github"));
-
   linkedInButton.innerHTML = svg(linkedInIcon);
-  linkedInButton.addEventListener("click", () => openLink("linkedin"));
-
   emailButton.innerHTML = svg(emailIcon);
-  emailButton.addEventListener("click", () => openLink("email"));
-
+  githubButton.addEventListener("click", () => window.open(info.socials["github"], "_blank"));
+  linkedInButton.addEventListener("click", () => window.open(info.socials["linkedin"], "_blank"));
+  emailButton.addEventListener("click", () => window.open(info.socials["email"]));
   themeButton.addEventListener("click", darkModeHandler);
-
-  const openLink = (link) => window.open(info.socials[link], "_blank");
 </script>
