@@ -57,8 +57,19 @@
     @apply ml-2 mr-1 h-8 w-0;
     border: none; border-left: 1px solid gray;
   }
+  .readmore-button {
+    @apply dark:text-light dark:bg-[#202020] rounded-full pt-1 pr-4 pb-1 pl-4 bg-slate-100 
+  }
   .card {
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];
+  }
+  #experience {
+    /* height: 50rem; */
+    overflow: hidden;
+    /* transition: max-height 0.3s ease; */
+  }
+  .open {
+    height: 100rem;
   }
 
   /* functions */
