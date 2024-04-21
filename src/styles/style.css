@@ -61,7 +61,7 @@
     @apply text-center float-right border-t w-3/4 border-stone-50 dark:border-stone-900;
   }
   .readmore-button {
-    @apply dark:text-light dark:bg-[gray] rounded-b-lg pt-2 pr-4 pb-0 pl-4 bg-slate-100;
+    @apply dark:text-light dark:bg-[gray] rounded-b-lg w-full pt-0.5 bg-slate-100 flex justify-center items-end;
   }
   .card {
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];
