@@ -1,9 +1,7 @@
 ---
 import { info } from "@data/info";
-
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
-// import Experience from "@components/home/Experience.astro";
 import Experience from "@components/home/Experience";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 ---
@@ -14,7 +12,6 @@ import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
     <ProjectsWrapper />
   </section>
   <section>
-    <!-- <Experience experience={info.experience} /> -->
-    <Experience experience={info.experience} />
+    <Experience experience={info.experience} client:idle />
   </section>
 </Layout>

@@ -1,39 +1,53 @@
-import React from 'react'
+import { useState, useRef } from 'react'
 
 const Experience = (props) => {
-    const experience = props.experience ?? []
+    const experience = props?.experience ?? []
+    const [more, setMore] = useState(false)
+    const expRef = useRef();
+
+    const handleOpen = () => {
+        setMore((less) => !less)
+        // @ts-ignore
+        expRef?.current?.classList.toggle('close', more)
+    }
 
     return (
         <>
-        <div id="experience" class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
-        <h2 class="w-[15rem] mt-12">EXPERIENCE</h2>
-        <div class="w-full mt-12">
-            {experience.length && experience.map((xp) => (
-                <div class="mb-12">
-                <div class="flex justify-between items-center flex-wrap">
-                    <span class="font-semibold text-xl">{xp.name}</span>
+            <div id="experience" ref={expRef} className={"close overflow-hidden flex items-start justify-between flex-col sm:flex-row dark:text-light"}>
+                <h2 className="w-[15rem] mt-12">EXPERIENCE</h2>
+                <div className=" w-full mt-12">
+                    {experience?.length && experience.map((xp) => (
+                        <div className="mb-12">
+                            <div className="flex justify-between items-center flex-wrap">
+                                <span className="font-semibold text-xl">{xp.name}</span>
 
-                    <span class="text-sm dark:text-gray my-2">{xp.start} - {xp.end}</span>
-                </div>
-                <div class="text-sm mt-0 mb-2 text-blue">{xp.location}</div>
+                                <span className="text-sm dark:text-gray my-2">{xp.start} - {xp.end}</span>
+                            </div>
+                            <div className="text-sm mt-0 mb-2 text-blue">{xp.location}</div>
 
-                <ul class="mt-4">
-                    {xp.description.map((xp) => (
-                    <li class="dark:text-gray leading-relaxed">{xp}</li>
+                            <ul className="mt-4">
+                                {xp.description.map((xp, i) => (
+                                    <li key={`experience-key-${i}`} className="dark:text-gray leading-relaxed">{xp}</li>
+                                ))}
+                            </ul>
+                        </div>
                     ))}
-                </ul>
                 </div>
-            ))}
-        </div>
-        </div>
+            </div>
 
-        {/* <div class="container text-center mt-4">
-            <button
-                id="readmore-button"
-                class="readmore-button"
-                aria-label="See more"
-                />
-        </div> */}
+            <div className='exp-separator' >
+                <button
+                    onClick={() => handleOpen()}
+                    id="readmore-button"
+                    className="readmore-button opacity-50 hover:opacity-100"
+                    aria-label="See more"
+                >
+                    {more
+                        ? <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                        : <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    }
+                </button>
+            </div>
         </>
     )
 }
