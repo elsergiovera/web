@@ -1,20 +1,68 @@
 ---
-import { info } from "@data/info";
+import moon from '@data/icons/moon.svg'
+const { title, socials } = Astro.props
+
+console.log("moon", moon)
+
 ---
+<header
+  class="container flex items-center justify-between h-[80px] sm:h-[123px] sm:flex-row"
+>
+  <a
+    class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
+    href="/"
+  >
+    {title}
+  </a>
+  <nav>
+    <ul class="flex items-center">
+      <!-- <li>
+        <button
+          onclick={"alert('"+socials[0].name+"')"}
+          id={"asd-button"}
+          class="nav-button"
+        >
+          <Fragment set:html={socials[0].icon} />
+        </button>
+      </li> -->
+      {socials.map((social) => (
+        <li>
+          <button
+            onclick={"openLink('"+social.name+"')"}
+            id={social.name+"-button"}
+            class="nav-button"
+          >
+            <Fragment set:html={social.icon} />
+          </button>
+        </li>
+      ))}
+      <li>
+        <hr
+          class="nav-separator"
+        />
+      </li>
+      <li>
+        <button
+          aria-label="theme-button"
+          id="theme-button"
+          class="nav-button"
+          ></button>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-<script>
-  import { info } from "@data/info";
-
+<script is:inline>
   const svg = (data) =>
     `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${data}</svg>`;
-  const githubIcon = `<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>`;
-  const linkedInIcon = `<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>`;
-  const emailIcon = `<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>`;
+  // const githubIcon = `<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>`;
+  // const linkedInIcon = `<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>`;
+  // const emailIcon = `<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>`;
   const moonIcon = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>`;
   const sunIcon = `<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>`;
-  const githubButton = document.getElementById("github-button");
-  const linkedInButton = document.getElementById("linkedIn-button");
-  const emailButton = document.getElementById("email-button");
+  // const githubButton = document.getElementById("github-button");
+  // const linkedInButton = document.getElementById("linkedIn-button");
+  // const emailButton = document.getElementById("email-button");
   const themeButton = document.getElementById("theme-button");
   const browserTheme = document.querySelector('[name="theme-color"]');
   let isDark;
@@ -56,63 +104,19 @@ import { info } from "@data/info";
     }
   };
   window.localStorage.setItem("theme", theme);
-
-  // BUTTONS
-  githubButton.innerHTML = svg(githubIcon);
-  githubButton.addEventListener("click", () => openLink("github"));
-
-  linkedInButton.innerHTML = svg(linkedInIcon);
-  linkedInButton.addEventListener("click", () => openLink("linkedin"));
-
-  emailButton.innerHTML = svg(emailIcon);
-  emailButton.addEventListener("click", () => openLink("email"));
-
   themeButton.addEventListener("click", darkModeHandler);
 
-  const openLink = (link) => window.open(info.socialMedia[link], "_blank");
-</script>
+  // BUTTONS
+  // githubButton.innerHTML = svg(githubIcon);
+  // githubButton.addEventListener("click", () => open(githubButton.dataset.link));
 
-<header
-  class="container flex items-center justify-between h-[80px] sm:h-[123px] sm:flex-row"
->
-  <a
-    class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
-    href="/"
-  >
-    {info.title}
-  </a>
-  <nav>
-    <ul class="flex items-center">
-      <li>
-        <button
-          id="github-button"
-          class="nav-button"
-        ></button>
-      </li>
-      <li>
-        <button
-          id="linkedIn-button"
-          class="nav-button"
-        ></button>
-      </li>
-      <li>
-        <button
-          id="email-button"
-          class="nav-button"
-        ></button>
-      </li>
-      <li>
-        <hr
-          class="nav-separator"
-        />
-      </li>
-      <li>
-        <button
-          aria-label="theme-button"
-          id="theme-button"
-          class="nav-button"
-          ></button>
-      </li>
-    </ul>
-  </nav>
-</header>
+  // linkedInButton.innerHTML = svg(linkedInIcon);
+  // linkedInButton.addEventListener("click", () => openLink("linkedin"));
+
+  // emailButton.innerHTML = svg(emailIcon);
+  // emailButton.addEventListener("click", () => openLink("email"));
+
+
+  // const openLink = (link) => window.open(link, "_blank");
+  const openLink = (link) => alert(link);
+</script>

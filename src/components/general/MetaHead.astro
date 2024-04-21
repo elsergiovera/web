@@ -1,8 +1,10 @@
 ---
-import { info } from "@data/info";
-
-const { title, description } = Astro.props;
-const path_segment = import.meta.env.SITE_PATH_SEGMENT ?? "-";
+const { title, subtitle } = Astro.props
+const SITE_PATH_SEGMENT = import.meta.env.SITE_PATH_SEGMENT ?? "-"
+const SITE_URL = import.meta.env.SITE_URL ?? "-"
+const path_description =  subtitle 
+  ? `${SITE_PATH_SEGMENT} ${subtitle}`
+  : ""
 ---
 
 <meta charset="UTF-8" />
@@ -22,22 +24,22 @@ const path_segment = import.meta.env.SITE_PATH_SEGMENT ?? "-";
 <!-- Primary Meta Tags -->
 {
   title && (
-    <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />
+    <link rel="canonical" href={`${SITE_URL}${Astro.url.pathname}`} />
   )
 }
-{title && <title>{`${title} ${path_segment} ${description}`}</title>}
-{title && <meta name="title" content={`${title} ${path_segment} ${description}`} />}
-{description && <meta name="description" content={description} />}
+{title && <title>{`${title} ${path_description}`}</title>}
+{title && <meta name="title" content={`${title} ${path_description}`} />}
+{subtitle && <meta name="description" content={subtitle} />}
 
 <!-- Open Graph / Facebook -->
 {title && <meta property="og:type" content="website" />}
 {
   title && (
-    <meta property="og:url" content={`${info.baseUrl}${Astro.url.pathname}`} />
+    <meta property="og:url" content={`${SITE_URL}${Astro.url.pathname}`} />
   )
 }
-{title && <meta property="og:title" content={`${title} ${path_segment} ${info.name}`} />}
-{description && <meta property="og:description" content={description} />}
+{title && <meta property="og:title" content={`${title} ${path_description}`} />}
+{subtitle && <meta property="og:description" content={subtitle} />}
 
 <!-- Twitter -->
 {title && <meta property="twitter:card" content="summary_large_image" />}
@@ -45,12 +47,12 @@ const path_segment = import.meta.env.SITE_PATH_SEGMENT ?? "-";
   title && (
     <meta
       property="twitter:url"
-      content={`${info.baseUrl}${Astro.url.pathname}`}
+      content={`${SITE_URL}${Astro.url.pathname}`}
     />
   )
 }
-{title && <meta property="twitter:title" content={`${title} ${path_segment} ${info.name}`} />}
-{description && <meta property="twitter:description" content={description} />}
+{title && <meta property="twitter:title" content={`${title} ${path_description}`} />}
+{subtitle && <meta property="twitter:description" content={subtitle} />}
 
 <!-- preload assests -->
 <link

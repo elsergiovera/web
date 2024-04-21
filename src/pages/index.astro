@@ -6,7 +6,7 @@ import Experience from "@components/home/Experience";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 ---
 
-<Layout>
+<Layout socials={info.socials}>
   <Hero name={info.name} about={info.about} />
   <section>
     <ProjectsWrapper />
