@@ -12,6 +12,6 @@ import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
     <ProjectsWrapper />
   </section>
   <section>
-    <Experience experience={info.experience} client:idle />
+    <Experience experience={info.experience} client:only="react" />
   </section>
 </Layout>
