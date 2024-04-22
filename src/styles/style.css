@@ -18,12 +18,40 @@
   p {
     @apply my-8;
   }
-  /* li {
-    @apply font-inter text-dark-gray;
+  /* a:not(.not-a) {
+    @apply bg-indigo-500;
   } */
-  /* a {
 
-  } */
+  a:not(.not-a)  {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    z-index: 1;
+  }
+  
+  a:not(.not-a)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: .07em;
+    height: .1em;
+    width: 100%;
+    background: linear-gradient(
+      89.81deg,
+      #9845e8 -1.72%,
+      #33d2ff 54.05%,
+      #dd5789 99.78%
+    );
+    z-index: -1;
+    animation: gradient 6s ease infinite;
+  }
+  
+  a:not(.not-a):hover::after {
+    height: .2em;
+  }
+
+
 
   /* classes and id's */
   .container {

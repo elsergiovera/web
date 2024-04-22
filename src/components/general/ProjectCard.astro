@@ -13,7 +13,7 @@ const link = `/projects/${name}`;
       github && (
         <a
           href={github}
-          class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
+          class="not-a text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
           aria-label="Social Media"
           target="_blank"
         >
@@ -38,7 +38,7 @@ const link = `/projects/${name}`;
       url && (
         <a
           href={url}
-          class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
+          class="not-a text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
           aria-label="Social Media"
           target="_blank"
         >
@@ -66,6 +66,7 @@ const link = `/projects/${name}`;
       <a
         href={link}
         target={"_self"}
+        class="not-a"
         >
           <Image
             src={img}
