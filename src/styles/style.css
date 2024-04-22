@@ -7,9 +7,7 @@
     @apply bg-light dark:bg-dark;
   }
   h1 {
-    @apply font-outfit font-thin sm:text-8xl;
-    display: inline;
-    vertical-align: middle;
+    @apply text-4xl
   }
   h2 {
     @apply text-2xl
@@ -20,14 +18,21 @@
   p {
     @apply my-8;
   }
-  li,
-  a {
+  /* li {
     @apply font-inter text-dark-gray;
-  }
+  } */
+  /* a {
+
+  } */
 
   /* classes and id's */
   .container {
     @apply max-w-[800px] mx-auto px-4;
+  }
+  .title {
+    @apply font-outfit font-thin sm:text-8xl;
+    display: inline;
+    vertical-align: middle;
   }
   .profile {
     width: 8em;
@@ -57,20 +62,11 @@
     @apply ml-2 mr-1 h-8 w-0;
     border: none; border-left: 1px solid gray;
   }
-  .exp-separator {
-    @apply text-center float-right border-t w-3/4 border-stone-50 dark:border-stone-900;
-  }
   .readmore-button {
     @apply dark:text-light dark:bg-[gray] rounded-b-lg w-full pt-0.5 bg-slate-100 flex justify-center items-end;
   }
   .card {
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];
-  }
-  .open {
-    height: h-full;
-  }
-  .close {
-    height: 40rem;
   }
 
   /* functions */
@@ -88,7 +84,7 @@
     }
   }
   @media (max-width: 650px) {
-    h1 {
+    .title {
       @apply text-6xl
     }
 
@@ -103,7 +99,7 @@
     }
   }
   @media (max-width: 500px) {
-    h1 {
+    .title {
       @apply text-5xl tracking-tight;
     }
     .nav-button, #theme-button {
@@ -130,7 +126,7 @@
       display: none;
     }
 
-    h1 {
+    .title {
       line-height: 2em;
     }
   }

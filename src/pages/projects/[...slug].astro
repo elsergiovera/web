@@ -18,7 +18,7 @@ const title = `${entry.data.name}`
 
 <Layout title={title} socials={info.socials}>
   <div class="mt-6 mb-4">
-    <h1 class="rainbow">{entry.data.title}</h>
+    <span class="title rainbow">{entry.data.title}</span>
   </div>
 
   <div class="mb-8">
@@ -26,6 +26,6 @@ const title = `${entry.data.name}`
   </div>
 
   <div class="dark:text-light leading-relaxed">
-    <Content />
+      <Content />
   </div>
 </Layout>

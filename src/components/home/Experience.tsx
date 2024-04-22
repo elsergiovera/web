@@ -8,12 +8,12 @@ const Experience = (props) => {
     const handleOpen = () => {
         setMore((less) => !less)
         // @ts-ignore
-        expRef?.current?.classList.toggle('close', more)
+        expRef?.current?.classList.toggle('h-96', more)
     }
 
     return (
         <>
-            <div id="experience" ref={expRef} className={"close overflow-hidden flex items-start justify-between flex-col sm:flex-row dark:text-light"}>
+            <div id="experience" ref={expRef} className={"h-96 overflow-hidden flex items-start justify-between flex-col sm:flex-row dark:text-light"}>
                 <h2 className="w-[15rem] mt-12">EXPERIENCE</h2>
                 <div className=" w-full mt-12">
                     {experience?.length && experience.map((xp, i) => (
