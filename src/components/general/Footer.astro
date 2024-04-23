@@ -1,8 +1,13 @@
+---
+import { Image } from "astro:assets";
+import cl from "@data/cl.svg";
+import heart from "@data/heart.svg";
+---
 <footer
   class="container text-center mt-14 mb-4"
 >
   <hr />
   <div class="dark:text-light text-xs mt-4">
-    made with &#128156; in Chile
+    <span class="opacity-50 flex justify-center items-center" style="font-size: 0.4rem">from&nbsp;<Image src={cl} loading="eager" alt="CL" width="7" height="6" />&nbsp;with<Image src={heart} loading="eager" alt="<3" width="6" height="6" /></span>
   </div> 
 </footer>
