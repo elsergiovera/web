@@ -4,7 +4,7 @@ export const info = {
   socials: {
     github: "https://github.com/elsergiovera",
     linkedin: "https://www.linkedin.com/in/elsergiovera/",
-    email: "mailto:verasergio@gmail.com"
+    email: "verasergio@gmail.com"
   },
   experience: [
     {

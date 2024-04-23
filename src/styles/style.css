@@ -35,7 +35,7 @@
     @apply bg-[#33d2ff];
     content: '';
     position: absolute;
-    left: -1px;
+    left: -2px;
     bottom: .075em;
     height: 0.2em;
     width: 110%;
@@ -80,7 +80,7 @@
     border: none; border-left: 1px solid gray;
   }
   .readmore-button {
-    @apply dark:text-light dark:bg-[gray] rounded-b-lg w-full pt-0.5 bg-slate-100 flex justify-center items-end;
+    @apply dark:text-light dark:bg-[gray] rounded-b-lg w-full pt-0.5 bg-slate-100 flex justify-center items-end opacity-50 hover:opacity-100 hover:pt-1 dark:opacity-15 dark:hover:opacity-40;
   }
   .card {
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];

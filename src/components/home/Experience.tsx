@@ -38,7 +38,7 @@ const Experience = (props) => {
             <button
                 onClick={() => handleOpen()}
                 id="readmore-button"
-                className="readmore-button opacity-50 hover:opacity-100 hover:pt-1 dark:opacity-15 dark:hover:opacity-40"
+                className="readmore-button"
                 aria-label="See more"
             >
                 {more

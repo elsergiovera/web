@@ -89,12 +89,12 @@ const { title } = Astro.props;
     document.documentElement.setAttribute("data-theme", "light");
     isDark = true;
     themeButton.innerHTML = moon;
-    if (browserTheme) browserTheme.content = "#FFFFFF";
+    if (browserTheme) browserTheme.content = "light";
   } else {
     document.documentElement.setAttribute("data-theme", "dark");
     isDark = false;
     themeButton.innerHTML = sun;
-    if (browserTheme) browserTheme.content = "#111111";
+    if (browserTheme) browserTheme.content = "dark";
   }
   const darkModeHandler = () => {
     if (isDark) {
@@ -102,19 +102,19 @@ const { title } = Astro.props;
       localStorage.theme = "dark";
       isDark = false;
       themeButton.innerHTML = sun;
-      if (browserTheme) browserTheme.content = "#111111";
+      if (browserTheme) browserTheme.content = "dark";
     } else {
       document.documentElement.setAttribute("data-theme", "light");
       localStorage.theme = "light";
       isDark = true;
       themeButton.innerHTML = moon;
-      if (browserTheme) browserTheme.content = "#FFFFFF";
+      if (browserTheme) browserTheme.content = "light";
     }
   };
   window.localStorage.setItem("theme", theme);
 
-  githubButton.addEventListener("click", () => window.open(info.socials["github"], "_blank"));
-  linkedInButton.addEventListener("click", () => window.open(info.socials["linkedin"], "_blank"));
-  emailButton.addEventListener("click", () => window.open(info.socials["email"]));
+  githubButton.addEventListener("click", () => window.location.href=`${info.socials["github"]}`);
+  linkedInButton.addEventListener("click", () => window.location.href=`${info.socials["linkedin"]}`);
+  emailButton.addEventListener("click", () => window.open(`mailto:${info.socials["email"]}`));
   themeButton.addEventListener("click", darkModeHandler);
 </script>
