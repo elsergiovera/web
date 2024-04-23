@@ -26,21 +26,22 @@
   p {
     @apply my-8;
   }
+  ul:not(.not-ul) {
+    @apply prose list-disc dark:text-gray
+  }
   a:not(.not-a)  {
     @apply inline-block relative;
     text-decoration: none;
   }
-  
   a:not(.not-a)::after {
     @apply bg-[#33d2ff];
     content: '';
     position: absolute;
     left: -2px;
-    bottom: .075em;
-    height: 0.2em;
-    width: 110%;
+    bottom: .1em;
+    height: 0.1em;
+    width: 105%;
     z-index: -1;
-    background-size: 150% 150%;
     transition: height .25s cubic-bezier(.6,0,.4,1);
   }
   a:not(.not-a):hover::after {
@@ -80,7 +81,7 @@
     border: none; border-left: 1px solid gray;
   }
   .readmore-button {
-    @apply dark:text-light dark:bg-[gray] rounded-b-lg w-full pt-0.5 bg-slate-100 flex justify-center items-end opacity-50 hover:opacity-100 hover:pt-1 dark:opacity-15 dark:hover:opacity-40;
+    @apply dark:text-light dark:bg-[gray] rounded-b-lg w-full pt-px bg-slate-100 flex justify-center items-end opacity-50 hover:opacity-100 dark:opacity-15 dark:hover:opacity-40;
   }
   .card {
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];

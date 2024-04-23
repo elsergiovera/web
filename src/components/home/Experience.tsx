@@ -17,7 +17,7 @@ const Experience = (props) => {
                 <h2 className="w-[15rem] mt-12">EXPERIENCE</h2>
                 <div className=" w-full mt-12">
                     {experience?.length && experience.map((xp, i) => (
-                        <div key={`experience-holder-${i}`} className={i === experience.length - 1 ? "mb-2" : "mb-12"}>
+                        <div key={`experience-holder-${i}`} className={i === experience.length - 1 ? "mb-4" : "mb-12"}>
                             <div className="flex justify-between items-center flex-wrap">
                                 <span className="font-semibold text-xl">{xp.name}</span>
 
@@ -25,9 +25,9 @@ const Experience = (props) => {
                             </div>
                             <div className="text-sm mt-0 mb-2 text-blue">{xp.location}</div>
 
-                            <ul className="mt-4">
+                            <ul className="mt-4 leading-relaxed">
                                 {xp.description.map((xp, i) => (
-                                    <li key={`experience-key-${i}`} className="dark:text-gray leading-relaxed">{xp}</li>
+                                    <li key={`experience-key-${i}`} className="dark:text-gray">{xp}</li>
                                 ))}
                             </ul>
                         </div>
