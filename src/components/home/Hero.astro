@@ -8,7 +8,8 @@ const { name, about } = Astro.props;
 <section>
   <div>
     <Image src={profile} loading="eager" alt="" class="profile" />
-    <span class="title dark:text-light"><span id="hero-im">I'm</span> <span id="hero-name" class="rainbow font-medium">{name.split(' ')[0]}</span>,</span>
+    <span class="title dark:text-light"><span id="hero-im">I'm</span>
+    <span id="hero-name" class="rainbow font-medium">{name.split(' ')[0]}</span>,</span>
   </div>
   <div id="hero-about" class="dark:text-light sm:text-lg mt-4 mb-14">
     {about}

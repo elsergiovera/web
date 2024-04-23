@@ -2,6 +2,7 @@
 import { info } from "@data/info";
 import { getCollection } from 'astro:content';
 import Layout from "@layouts/Layout.astro";
+import Prose from "@components/general/Prose.astro";
 import ProjectCard from '@components/general/ProjectCard.astro';
 
 export async function getStaticPaths() {
@@ -25,7 +26,7 @@ const title = `${entry.data.name}`
     <ProjectCard project={entry} hyperlink={false} />
   </div>
 
-  <div class="dark:text-light leading-relaxed">
+    <Prose>
       <Content />
-  </div>
+    </Prose>
 </Layout>
