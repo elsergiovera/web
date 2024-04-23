@@ -2,22 +2,23 @@
 import Footer from "@components/general/Footer.astro";
 import Navbar from "@components/general/Navbar.astro";
 import MetaHead from "@components/general/MetaHead.astro";
+import info from "@data/info.json";
 import "../styles/style.css";
 
-const SITE_TITLE = import.meta.env.SITE_TITLE;
+const site_title = info.site_title ?? "";
 const { title } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <MetaHead
-      title={SITE_TITLE}
+      title={site_title}
       subtitle={title ?? ""}
     />
   </head>
 
   <body>
-    <Navbar title={SITE_TITLE} />
+    <Navbar title={site_title} />
     <main class="container">
       <slot/>
     </main>

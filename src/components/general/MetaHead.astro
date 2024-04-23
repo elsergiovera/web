@@ -1,9 +1,11 @@
 ---
+import info from "@data/info.json";
+
 const { title, subtitle } = Astro.props
-const SITE_PATH_SEGMENT = import.meta.env.SITE_PATH_SEGMENT ?? "-"
-const SITE_URL = import.meta.env.SITE_URL ?? "-"
+const site_path_segment = "→"
+const site_url = info.site_url ?? "-"
 const path_description =  subtitle 
-  ? `${SITE_PATH_SEGMENT} ${subtitle}`
+  ? `${site_path_segment} ${subtitle}`
   : ""
 ---
 
@@ -24,7 +26,7 @@ const path_description =  subtitle
 <!-- Primary Meta Tags -->
 {
   title && (
-    <link rel="canonical" href={`${SITE_URL}${Astro.url.pathname}`} />
+    <link rel="canonical" href={`${site_url}${Astro.url.pathname}`} />
   )
 }
 {title && <title>{`${title} ${path_description}`}</title>}
@@ -35,7 +37,7 @@ const path_description =  subtitle
 {title && <meta property="og:type" content="website" />}
 {
   title && (
-    <meta property="og:url" content={`${SITE_URL}${Astro.url.pathname}`} />
+    <meta property="og:url" content={`${site_url}${Astro.url.pathname}`} />
   )
 }
 {title && <meta property="og:title" content={`${title} ${path_description}`} />}
@@ -47,7 +49,7 @@ const path_description =  subtitle
   title && (
     <meta
       property="twitter:url"
-      content={`${SITE_URL}${Astro.url.pathname}`}
+      content={`${site_url}${Astro.url.pathname}`}
     />
   )
 }
