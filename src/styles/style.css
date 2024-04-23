@@ -3,36 +3,41 @@
 
 @layer base {
   :root {
-    --rainbow: linear-gradient(
-		89.81deg,
-		#9845e8 -1.72%,
-		#33d2ff 54.05%,
-		#dd5789 99.78%
-	  );
+    --rainbow: linear-gradient(89.81deg,
+        #9845e8 -1.72%,
+        #33d2ff 54.05%,
+        #dd5789 99.78%);
   }
+
   /* tags */
   body {
     @apply bg-light dark:bg-dark;
   }
+
   h1 {
     @apply text-4xl
   }
+
   h2 {
     @apply text-2xl
   }
+
   hr {
     border-color: gray;
   }
+
   p {
     @apply my-8;
   }
   ul:not(.not-ul) {
-    @apply prose list-disc dark:text-gray
+    @apply prose list-disc dark:text-light;
   }
-  a:not(.not-a)  {
-    @apply inline-block relative;
+
+  a:not(.not-a) {
+    @apply prose inline-block relative dark:text-light;
     text-decoration: none;
   }
+
   a:not(.not-a)::after {
     @apply bg-[#33d2ff];
     content: '';
@@ -42,8 +47,9 @@
     height: 0.1em;
     width: 105%;
     z-index: -1;
-    transition: height .25s cubic-bezier(.6,0,.4,1);
+    transition: height .25s cubic-bezier(.6, 0, .4, 1);
   }
+
   a:not(.not-a):hover::after {
     height: 1.4em;
   }
@@ -52,11 +58,13 @@
   .container {
     @apply max-w-[800px] mx-auto px-4;
   }
+
   .title {
     @apply font-outfit font-thin sm:text-8xl;
     display: inline;
     vertical-align: middle;
   }
+
   .profile {
     width: 8em;
     height: 8em;
@@ -65,6 +73,7 @@
     display: inline;
     margin: 2em 1.5em 2em 0;
   }
+
   .rainbow {
     background: var(--rainbow);
     -webkit-background-clip: text;
@@ -73,16 +82,21 @@
     background-size: 150% 150%;
     animation: gradient 6s ease infinite;
   }
+
   .nav-button {
-    @apply dark:text-light dark:bg-[#202020] rounded-lg p-3 ml-1 bg-slate-100 
+    @apply dark:text-light dark:bg-[#202020] rounded-lg p-3 ml-1 bg-slate-100
   }
+
   .nav-separator {
     @apply ml-2 mr-1 h-8 w-0;
-    border: none; border-left: 1px solid gray;
+    border: none;
+    border-left: 1px solid gray;
   }
+
   .readmore-button {
     @apply dark:text-light dark:bg-[gray] rounded-b-lg w-full pt-px bg-slate-100 flex justify-center items-end opacity-50 hover:opacity-100 dark:opacity-15 dark:hover:opacity-40;
   }
+
   .card {
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];
   }
@@ -92,15 +106,16 @@
     0% {
       background-position: 0% 50%;
     }
-  
+
     50% {
       background-position: 100% 50%;
     }
-  
+
     100% {
       background-position: 0% 50%;
     }
   }
+
   @media (max-width: 650px) {
     .title {
       @apply text-6xl
@@ -111,35 +126,43 @@
       height: 7em;
     }
   }
+
   @media (max-width: 640px) {
     .exp-separator {
       @apply w-full float-none;
     }
   }
+
   @media (max-width: 500px) {
     .title {
       @apply text-5xl tracking-tight;
     }
-    .nav-button, #theme-button {
+
+    .nav-button,
+    #theme-button {
       @apply p-2;
       width: 1.85rem;
       height: 1.85rem;
     }
+
     .profile {
       width: 6em;
       height: 6em;
     }
+
     #nav-separator {
       @apply h-4;
     }
   }
+
   @media (max-width: 360px) {
+
     #github-button,
     #linkedIn-button,
     /* #email-button, */
     /* #theme-button, */
     /* #hero-im, */
-    .profile ,
+    .profile,
     .nav-separator {
       display: none;
     }
