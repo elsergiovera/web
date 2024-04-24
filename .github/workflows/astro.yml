@@ -5,10 +5,6 @@
 name: Deploy veraserg.io
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -68,7 +64,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - name: Generate Manifest
         # run: node ${{ github.workspace }}/scripts/webmanifest.cjs.js
-        run: echo ${{ env.BUILD_PATH }} ls
+        run: ls
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
