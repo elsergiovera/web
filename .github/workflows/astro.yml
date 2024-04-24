@@ -73,7 +73,7 @@ jobs:
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
       - name: Generate Manifest
-        run: node scripts/webmanifest.cjs.js
+        run: node ${{ github.workspace }}/scripts/webmanifest.cjs.js
         working-directory: ${{ env.BUILD_PATH }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
