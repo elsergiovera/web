@@ -68,7 +68,6 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - name: Generate Manifest
         run: node ${{ env.BUILD_PATH }}/scripts/webmanifest.cjs
-        # run: ls
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
