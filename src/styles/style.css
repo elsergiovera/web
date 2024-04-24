@@ -29,9 +29,6 @@
   p {
     @apply my-8;
   }
-  ul:not(.not-ul) {
-    @apply prose list-disc dark:text-light;
-  }
 
   a:not(.not-a) {
     @apply prose inline-block relative dark:text-light;
