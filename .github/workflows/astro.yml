@@ -63,8 +63,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
       - name: Generate Manifest
-        # run: node ${{ github.workspace }}/scripts/webmanifest.cjs.js
-        run: ls
+        run: node /scripts/webmanifest.cjs.js
+        # run: ls
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
