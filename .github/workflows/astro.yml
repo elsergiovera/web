@@ -74,7 +74,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - name: Generate Manifest
         run: node ${{ github.workspace }}/scripts/webmanifest.cjs.js
-        working-directory: ${{ env.BUILD_PATH }}
+        working-directory: ${{ env.BUILD_PATH }}/script
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
