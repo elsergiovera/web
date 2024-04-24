@@ -66,15 +66,16 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
+      - name: Generate Manifest
+        # run: node ${{ github.workspace }}/scripts/webmanifest.cjs.js
+        run: echo ${{ github.workspace }} echo ${{ env.BUILD_PATH }}
+        working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} astro build \
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Generate Manifest
-        run: node ${{ github.workspace }}/scripts/webmanifest.cjs.js
-        working-directory: ${{ env.BUILD_PATH }}/script
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
