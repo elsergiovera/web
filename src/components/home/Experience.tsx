@@ -20,7 +20,7 @@ const Experience = (props) => {
                 <h2 className="w-[15rem] mt-12">EXPERIENCE</h2>
                 <div className=" w-full mt-12">
                     {experience?.length && experience.map((xp, i) => (
-                        <div key={`experience-holder-${i}`} className={"text-sm mb-10"}>
+                        <div key={`experience-holder-${i}`} className={"container text-sm mb-10"}>
                             <div className="flex justify-between items-center flex-wrap">
                                 <span className="font-semibold text-xl">{xp.name}</span>
 
