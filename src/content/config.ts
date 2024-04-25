@@ -10,7 +10,8 @@ const projectsCollection = defineCollection({
       title: z.string(),
       isFeatured: z.boolean(),
       url: z.string(),
-      github: z.string()
+      github: z.string(),
+      tags: z.array(z.string())
     })
 });
 

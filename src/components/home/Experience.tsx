@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+// import Tag from "@components/general/Tag.astro"
 
 const Experience = (props) => {
     const experience = props?.experience ?? []
@@ -23,7 +24,7 @@ const Experience = (props) => {
 
                                 <span className="text-sm dark:text-gray my-2">{xp.start} - {xp.end}</span>
                             </div>
-                            <div className="text-sm mt-0 mb-2 text-blue">{xp.location}</div>
+                            <div className="text-sm mt-0 mb-2 text-[--cyan]">{xp.location}</div>
 
                             <div className="prose container mt-4 leading-relaxed">
                                 <ul>
@@ -32,6 +33,8 @@ const Experience = (props) => {
                                     ))}
                                 </ul>
                             </div>
+
+                            {/* <Tag tags={xp.tags}/> */}
                         </div>
                     ))}
                 </div>

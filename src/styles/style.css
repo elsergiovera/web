@@ -3,10 +3,14 @@
 
 @layer base {
   :root {
+    --darkgray: #202020;
+    --purple: #9845e8;
+    --cyan: #33d2ff;
+    --pink: #dd5789;
     --rainbow: linear-gradient(89.81deg,
-        #9845e8 -1.72%,
-        #33d2ff 54.05%,
-        #dd5789 99.78%);
+        var(--purple) -1.72%,
+        var(--cyan) 54.05%,
+        var(--pink) 99.78%);
   }
 
   /* tags */
@@ -36,7 +40,7 @@
   }
 
   a:not(.not-a)::after {
-    @apply bg-[#33d2ff];
+    background: var(--cyan);
     content: '';
     position: absolute;
     left: -2px;
@@ -81,7 +85,7 @@
   }
 
   .nav-button {
-    @apply dark:text-light dark:bg-[#202020] rounded-lg p-3 ml-1 bg-slate-100
+    @apply dark:text-light dark:bg-[--darkgray] rounded-lg p-3 ml-1 bg-slate-100;
   }
 
   .nav-separator {
@@ -97,8 +101,11 @@
   .card {
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];
   }
+  .tag {
+    @apply text-light rounded-full text-sm mx-1 px-2 bg-[--cyan];
+  }
 
-  /* functions */
+  /* functions */ 
   @keyframes gradient {
     0% {
       background-position: 0% 50%;

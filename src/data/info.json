@@ -20,7 +20,8 @@
         "Implementation and application of Test-Driven Development practices to ensure the reliability and robustness of the software.",
         "Implementation and application of Domain-Driven Design principles to design scalable and maintainable solutions.",
         "Pair programming sessions with CI/CD practices to improve overall code quality and deployment efficiency."
-      ]
+      ],
+      "tags": ["react", "three.js"]
     },
     {
       "name": "Larrain Vial",
@@ -31,7 +32,8 @@
         "Front End development using Microsoft .NET following MVC pattern with ASP.NET Razor, C# .NET, Ajax and Bootstrap.",
         "Back End development of SOAP Web Services and RESTful API using Microsoft .NET, with C# .NET, Entity Framework, Dapper ORM and LinQ.",
         "Development and maintenance of Stored Procedures in Microsoft SQL Server."
-      ]
+      ],
+      "tags": ["react", "three.js"]
     },
     {
       "name": "Grupo HDI",
@@ -41,7 +43,8 @@
       "description": [
         "Analysis and development of automation test using HPE Unified Functional Testing (UFT).",
         "Analysis and development of automation tests for websites using Eclipse, with Selenium Framework."
-      ]
+      ],
+      "tags": ["react", "three.js"]
     },
     {
       "name": "Socofin S.A.",
@@ -51,7 +54,8 @@
       "description": [
         "Migration of services developed in FoxPro to Windows Services and Applications using Microsoft .NET, with C# .NET, LinQ and Crystal Report.",
         "Migrations of procedures developed in FoxPro to stored procedures in Microsoft SQL Server and Oracle Database."
-      ]
+      ],
+      "tags": ["react", "three.js"]
     },
     {
       "name": "Manager ERP",
@@ -60,7 +64,8 @@
       "end": "August 2016",
       "description": [
         "Migration of procedures developed in FoxPro to stored procedures in Microsoft SQL Server."
-      ]
+      ],
+      "tags": ["react", "three.js"]
     },
     {
       "name": "Componente Serviex",
@@ -71,7 +76,8 @@
         "Front End development using Microsoft .NET following MVC pattern with ASP.NET Razor, C# .NET and VB .NET",
         "Back End development of SOAP Web Services using Microsoft .NET, with C# .NET and VB .NET.",
         "Development and maintenance of Stored Procedures, Triggers, and Views in Microsoft SQL Server."
-      ]
+      ],
+      "tags": ["react", "three.js"]
     }
   ]
 }
