@@ -11,5 +11,5 @@ export default defineConfig({
     enabled: false
   },
   site: "https://veraserg.io",
-  integrations: [tailwind(), mdx(), sitemap(), robotsTxt(), tailwind(), react()]
+  integrations: [tailwind(), mdx(), sitemap(), robotsTxt(), react()]
 });

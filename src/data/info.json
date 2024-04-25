@@ -15,13 +15,13 @@
       "start": "July 2023",
       "end": "Present",
       "description": [
-        "Development of Front End React web applications capable of 3D rendering, using Three.js.",
-        "Development of RESTful APIs with Node-RED low-code platform for fast development and intergration.",
-        "Implementation and application of Test-Driven Development practices to ensure the reliability and robustness of the software.",
-        "Implementation and application of Domain-Driven Design principles to design scalable and maintainable solutions.",
-        "Pair programming sessions with CI/CD practices to improve overall code quality and deployment efficiency."
-      ],
-      "tags": ["react", "three.js"]
+        "Front End dynamic web applications development with 3D user interface using React, JavaScript, TypeScript, Three.js and React Three Fiber.",
+        "RESTful APIs with Node-RED low-code platform for fast development and intergration.",
+        "Test-Driven development practices to ensure the reliability and robustness of the software.",
+        "Domain-Driven Design principles to design scalable and maintainable solutions.",
+        "CI/CD practices with Centralized Repository Architecture (mono repo).",
+        "Pair programming sessions following Scrum agile methodology, fostering collaborative problem-solving and knowledge sharing."
+      ]
     },
     {
       "name": "Larrain Vial",
@@ -29,11 +29,10 @@
       "start": "March 2019",
       "end": "March 2023",
       "description": [
-        "Front End development using Microsoft .NET following MVC pattern with ASP.NET Razor, C# .NET, Ajax and Bootstrap.",
-        "Back End development of SOAP Web Services and RESTful API using Microsoft .NET, with C# .NET, Entity Framework, Dapper ORM and LinQ.",
-        "Development and maintenance of Stored Procedures in Microsoft SQL Server."
-      ],
-      "tags": ["react", "three.js"]
+        "Front End dynamic web applications development with Microsoft .NET, following MVC pattern, using ASP.NET Razor, C#, Ajax and Bootstrap.",
+        "Back End SOAP Web Services and RESTful API development with Microsoft .NET, using C#, Entity Framework, Dapper ORM and LinQ.",
+        "Stored Procedures development in Microsoft SQL Server."
+      ]
     },
     {
       "name": "Grupo HDI",
@@ -41,21 +40,19 @@
       "start": "June 2017",
       "end": "February 2018",
       "description": [
-        "Analysis and development of automation test using HPE Unified Functional Testing (UFT).",
-        "Analysis and development of automation tests for websites using Eclipse, with Selenium Framework."
-      ],
-      "tags": ["react", "three.js"]
+        "Creation of Automation test using HPE Unified Functional Testing (UFT).",
+        "Development of Automation tests for websites using Eclipse, with Selenium Framework."
+      ]
     },
     {
       "name": "Socofin S.A.",
       "location": "Santiago, Chile",
       "start": "June 2016",
-      "end": "Auust 2016",
+      "end": "August 2016",
       "description": [
-        "Migration of services developed in FoxPro to Windows Services and Applications using Microsoft .NET, with C# .NET, LinQ and Crystal Report.",
-        "Migrations of procedures developed in FoxPro to stored procedures in Microsoft SQL Server and Oracle Database."
-      ],
-      "tags": ["react", "three.js"]
+        "Migration of FoxPro Services to Windows Services with Microsoft .NET, using C#, LinQ and Crystal Report.",
+        "Migration of FoxPro Procedures to Stored Procedures in SQL Server and Oracle DB."
+      ]
     },
     {
       "name": "Manager ERP",
@@ -63,9 +60,8 @@
       "start": "June 2016",
       "end": "August 2016",
       "description": [
-        "Migration of procedures developed in FoxPro to stored procedures in Microsoft SQL Server."
-      ],
-      "tags": ["react", "three.js"]
+        "Migration of FoxPro Procedures to Stored Procedures in SQL Server."
+      ]
     },
     {
       "name": "Componente Serviex",
@@ -73,11 +69,10 @@
       "start": "June 2014",
       "end": "August 2015",
       "description": [
-        "Front End development using Microsoft .NET following MVC pattern with ASP.NET Razor, C# .NET and VB .NET",
-        "Back End development of SOAP Web Services using Microsoft .NET, with C# .NET and VB .NET.",
-        "Development and maintenance of Stored Procedures, Triggers, and Views in Microsoft SQL Server."
-      ],
-      "tags": ["react", "three.js"]
+        "Front End dynamic web applications development with Microsoft .NET using MVC pattern, ASP.NET Razor, C# and VB.NET.",
+        "Back End SOAP Web Services development with Microsoft .NET, using C# and VB.NET.",
+        "Stored Procedures, Triggers, and Views development in Microsoft SQL Server."
+      ]
     }
   ]
 }

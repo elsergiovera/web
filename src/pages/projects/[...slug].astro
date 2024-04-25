@@ -2,7 +2,7 @@
 import info from "@data/info.json";
 import { getCollection } from 'astro:content';
 import Layout from "@layouts/Layout.astro";
-import Tag from "@components/general/Tag.astro";
+import Tag from "@components/general/Tag";
 import Prose from "@components/general/Prose.astro";
 import ProjectCard from '@components/general/ProjectCard.astro';
 
@@ -16,7 +16,6 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 const title = `${entry.data.name}`
-// const tags = ["react", "three.js"]
 ---
 
 <Layout title={title} socials={info.socials}>
@@ -32,5 +31,5 @@ const title = `${entry.data.name}`
     <Content />
   </Prose>
   
-  <Tag tags={entry.data.tags} />
+  <Tag tags={entry.data.tags} client:only="react" />
 </Layout>
