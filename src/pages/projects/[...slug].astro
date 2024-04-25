@@ -25,11 +25,11 @@ const title = `${entry.data.name}`
   
   <div class="mb-8">
     <ProjectCard project={entry} hyperlink={false} />
+    <Tag tags={entry.data.tags} client:only="react" />
   </div>
   
   <Prose>
     <Content />
   </Prose>
   
-  <Tag tags={entry.data.tags} client:only="react" />
 </Layout>

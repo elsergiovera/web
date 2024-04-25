@@ -102,7 +102,7 @@
     @apply w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s];
   }
   .tag {
-    @apply text-light rounded-full text-sm mx-1 px-2 bg-[--cyan];
+    @apply rounded-full text-sm mx-1 px-2 bg-slate-100 opacity-70 dark:bg-[--darkgray] dark:text-light hover:opacity-100;
   }
 
   /* functions */ 

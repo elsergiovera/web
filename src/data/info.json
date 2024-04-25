@@ -19,7 +19,7 @@
         "RESTful APIs with Node-RED low-code platform for fast development and intergration.",
         "Test-Driven development practices to ensure the reliability and robustness of the software.",
         "Domain-Driven Design principles to design scalable and maintainable solutions.",
-        "CI/CD practices with Centralized Repository Architecture (mono repo).",
+        "CI/CD practices with Centralized Repository Architecture (Mono-repo).",
         "Pair programming sessions following Scrum agile methodology, fostering collaborative problem-solving and knowledge sharing."
       ]
     },
