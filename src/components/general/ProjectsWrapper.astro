@@ -8,8 +8,8 @@ const projectsFeatured = projects
   .sort((a, b) => a.data.id - b.data.id)
 ---
 
-<div class=" dark:text-light">
-  <h2 class="dark:text-light mt-12">FEATURED PROJECTS</h2>
+<div class=" dark:text-light mt-12">
+  <h2>FEATURED PROJECTS</h2>
 
   <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-10">
     {projectsFeatured.map((project) => <ProjectCard project={project} hyperlink={true} />)}

@@ -84,14 +84,22 @@
     animation: gradient 6s ease infinite;
   }
 
-  .nav-button {
-    @apply dark:text-light dark:bg-[--darkgray] rounded-lg p-3 ml-1 bg-slate-100;
+  .icon-button,
+  .text-button {
+    @apply rounded-lg ml-1 bg-slate-100 hover:bg-slate-200 dark:text-light dark:bg-[--darkgray] dark:hover:bg-zinc-700;
   }
+  .icon-button { @apply p-3 }
+  .text-button { @apply p-2 }
 
-  .nav-separator {
-    @apply ml-2 mr-1 h-8 w-0;
+  .nav-separator,
+  .text-button-separator {
+    @apply ml-2 mr-1 h-5;
     border: none;
-    border-left: 1px solid gray;
+    border-left: 1px dashed gray;
+  }
+  .text-button-separator {
+    @apply h-4;
+    border-left: 1px dotted gray;
   }
 
   .readmore-button {
@@ -131,18 +139,12 @@
     }
   }
 
-  @media (max-width: 640px) {
-    .exp-separator {
-      @apply w-full float-none;
-    }
-  }
-
   @media (max-width: 500px) {
     .title {
       @apply text-5xl tracking-tight;
     }
 
-    .nav-button,
+    .icon-button:not(div),
     #theme-button {
       @apply p-2;
       width: 1.85rem;
@@ -161,13 +163,13 @@
 
   @media (max-width: 360px) {
 
-    #github-button,
-    #linkedIn-button,
+    /* #github-button, */
+    /* #linkedIn-button, */
     /* #email-button, */
     /* #theme-button, */
     /* #hero-im, */
-    .profile,
-    .nav-separator {
+    /* .nav-separator, */
+    .profile {
       display: none;
     }
 
