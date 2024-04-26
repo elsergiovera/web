@@ -47,7 +47,7 @@ const Experience = (props) => {
                             </div>
                             <div className="mt-0 mb-2 text-[--cyan]">{xp.location}</div>
 
-                            <div className="prose leading-relaxed">
+                            <div className="prose container leading-relaxed">
                                 <ul>
                                     {xp.description.map((xp, i) => (
                                         <li key={`experience-key-${i}`} className="dark:text-gray">{xp}</li>

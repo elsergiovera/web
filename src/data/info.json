@@ -29,9 +29,9 @@
       "start": "March 2019",
       "end": "March 2023",
       "description": [
-        "Front End dynamic web applications development with Microsoft .NET, following MVC pattern, using ASP.NET Razor, C#, Ajax and Bootstrap.",
-        "Back End SOAP Web Services and RESTful API development with Microsoft .NET, using C#, Entity, Dapper ORM and LinQ.",
-        "Stored Procedures development in Microsoft SQL Server."
+        "Front End dynamic web applications development with Microsoft .NET, following MVC pattern, using ASP.NET Razor, C#, Ajax, JQuery and Bootstrap.",
+        "Back End SOAP Web Services and RESTful API development with Microsoft .NET, using C#, Entity, Dapper, Swagger and LinQ.",
+        "High Complexity Stored Procedures development in Microsoft SQL Server."
       ]
     },
     {
@@ -40,8 +40,8 @@
       "start": "June 2017",
       "end": "February 2018",
       "description": [
-        "Creation of Automation test using HPE Unified Functional Testing (UFT).",
-        "Development of Automation tests for websites using Eclipse with Selenium."
+        "Creation of Automation test with HPE Unified Functional Testing (UFT) and VBScript.",
+        "Development of Automation tests for websites with Selenium using Java."
       ]
     },
     {
