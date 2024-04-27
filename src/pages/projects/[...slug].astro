@@ -2,7 +2,7 @@
 import info from "@data/info.json";
 import { getCollection } from 'astro:content';
 import Layout from "@layouts/Layout.astro";
-import Tag from "@components/general/Tag";
+import Tag from "@components/general/Tag.astro";
 import Prose from "@components/general/Prose.astro";
 import ProjectCard from '@components/general/ProjectCard.astro';
 
@@ -25,7 +25,7 @@ const title = `${entry.data.name}`
   
   <div class="mb-8">
     <ProjectCard project={entry} hyperlink={false} />
-    <Tag tags={entry.data.tags} client:only="react" />
+    <Tag tags={entry.data.tags} />
   </div>
   
   <Prose>

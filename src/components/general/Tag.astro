@@ -1,0 +1,11 @@
+---
+const tags = Astro.props.tags ?? []
+const tagsArray = Array.isArray(tags)
+    ? tags
+    : [tags]
+---
+<div class="prose flex justify-items-start mt-4">
+    {tagsArray?.length && tagsArray.map((tag, i) => (
+        <div class="tag">{tag}</div>
+    ))}
+</div>
