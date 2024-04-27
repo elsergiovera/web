@@ -34,7 +34,7 @@ if (info) {
   const manifest_content = JSON.stringify(manifest, null, 2);
   fs.writeFileSync(manifest_path, manifest_content);
   
-  console.log('The file site.webmanifest generated successfully.');
+  console.log('Manifest was generated successfully.');
   process.exit(0)
 } else {
   console.error("No info.json was found.")
