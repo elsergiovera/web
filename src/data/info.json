@@ -15,8 +15,8 @@
       "start": "July 2023",
       "end": "Present",
       "description": [
-        "Front End dynamic web applications featuring 3D user interfaces developed with React, using Three.js and React Three Fiber libraries.",
-        "RESTful APIs development with Node-RED low-code platform for fast deploy and intergration.",
+        "Front End dynamic web applications development featuring 3D user interfaces with React, using Three.js and React Three Fiber libraries.",
+        "Back End RESTful APIs development with Node-RED low-code platform for fast deploy and intergration.",
         "Test-Driven Development practices and application to ensure the reliability and robustness of the software.",
         "Domain-Driven Design principles to design scalable and maintainable solutions.",
         "Trunk Based Development methodology with CI/CD practices for agile and seamless deployments.",
@@ -29,7 +29,7 @@
       "start": "March 2019",
       "end": "March 2023",
       "description": [
-        "Analysis, estimations and tasks delegations of IT projects.",
+        "Performing comprehensive project analysis, precise estimation, and efficient task delegation for company projects.",
         "Front End dynamic web applications development with Microsoft .NET, following MVC pattern, using ASP.NET Razor, C#, Ajax, JQuery and Bootstrap.",
         "Back End SOAP Web Services and RESTful API development with Microsoft .NET, using C#, Entity, Dapper, Swagger and LinQ.",
         "High Complexity Stored Procedures development in Microsoft SQL Server."

@@ -12,15 +12,15 @@
     {
       "name": "Vibia",
       "location": "Barcelona, Spain",
-      "start": "July 2023",
+      "start": "Julio 2023",
       "end": "Present",
       "description": [
-        "Front End dynamic web applications development with 3D user interface using React, JavaScript, TypeScript, Three.js and React Three Fiber.",
-        "RESTful APIs development with Node-RED low-code platform for fast deploy and intergration.",
-        "Test-Driven development practices and application to ensure the reliability and robustness of the software.",
-        "Domain-Driven Design principles to design scalable and maintainable solutions.",
-        "CI/CD practices with Centralized Repository Architecture (Mono-repo).",
-        "Pair programming sessions following Scrum agile methodology, fostering collaborative problem-solving and knowledge sharing."
+        "Desarrollo Front End de aplicaciones web dinámicas con interfaz de usuario en 3D utilizando React, con las librerías Three.js y React Three Fiber.",
+        "Desarrollo Back End de APIs RESTful con la plataforma low-code de Node-RED para implementaciones e integraciones rápidas.",
+        "Práctica y aplicación de metodología Test-Driven Development para garantizar la confiabilidad y robustez del software.",
+        "Principios Domain-Driven Design para diseñar soluciones escalables y mantenibles.",
+        "Metodología Trunk Based Development con prácticas de Integración y Despliegue Continuo (CI/CD) para facilitar despliegues ágiles y sin interrupciones.",
+        "Sesiones de Pair Programming siguiendo la metodología ágil Scrum, fomentando la resolución colaborativa de problemas y el intercambio de conocimientos."
       ]
     },
     {
@@ -29,9 +29,10 @@
       "start": "March 2019",
       "end": "March 2023",
       "description": [
-        "Front End dynamic web applications development with Microsoft .NET, following MVC pattern, using ASP.NET Razor, C#, Ajax, JQuery and Bootstrap.",
-        "Back End SOAP Web Services and RESTful API development with Microsoft .NET, using C#, Entity, Dapper, Swagger and LinQ.",
-        "High Complexity Stored Procedures development in Microsoft SQL Server."
+        "Realización de análisis exhaustivos, estimaciones precisas y delegación eficiente de tareas para proyectos de la empresa.",
+        "Desarrollo Front End de aplicaciones web dinámicas con Microsoft .NET, siguiendo el patrón MVC, utilizando ASP.NET Razor, C#, Ajax, JQuery y Bootstrap.",
+        "Desarrollo Back End de servicios web SOAP y API RESTful con Microsoft .NET, utilizando C#, Entity, Dapper, Swagger y LinQ.",
+        "Desarrollo de procedimientos almacenados de alta complejidad en Microsoft SQL Server."
       ]
     },
     {
@@ -40,8 +41,8 @@
       "start": "June 2017",
       "end": "February 2018",
       "description": [
-        "Creation of Automation test with HPE Unified Functional Testing (UFT) and VBScript.",
-        "Development of Automation tests for websites with Selenium using Java."
+        "Creación de pruebas de automatización con HPE Unified Functional Testing (UFT) y VBScript.",
+        "Desarrollo de pruebas de automatización para sitios web con Selenium utilizando Java."
       ]
     },
     {
@@ -50,8 +51,8 @@
       "start": "June 2016",
       "end": "August 2016",
       "description": [
-        "Migration of FoxPro Services to Windows Services with Microsoft .NET, using C#, VB .NET, LinQ and Crystal Report.",
-        "Migration of FoxPro Procedures to Stored Procedures in SQL Server and Oracle DB."
+        "Migración de Servicios de FoxPro a Servicios de Windows con Microsoft .NET, utilizando C#, VB .NET, LinQ y Crystal Report.",
+        "Migración de Procedimientos de FoxPro a Procedimientos Almacenados en SQL Server y Oracle DB."
       ]
     },
     {
@@ -60,7 +61,7 @@
       "start": "June 2016",
       "end": "August 2016",
       "description": [
-        "Migration of FoxPro Procedures to Stored Procedures in SQL Server."
+        "Migración de Procedimientos de FoxPro a Procedimientos Almacenados en SQL Server."
       ]
     },
     {
@@ -69,9 +70,9 @@
       "start": "June 2014",
       "end": "August 2015",
       "description": [
-        "Front End dynamic web applications development with Microsoft .NET using MVC pattern, ASP.NET Razor, C# and VB.NET.",
-        "Back End SOAP Web Services development with Microsoft .NET, using C# and VB.NET.",
-        "Stored Procedures, Triggers, and Views development in Microsoft SQL Server."
+        "Desarrollo de aplicaciones web dinámicas de Front End con Microsoft .NET utilizando el patrón MVC, ASP.NET Razor, C# y VB.NET.",
+        "Desarrollo de servicios web SOAP de Back End con Microsoft .NET, utilizando C# y VB.NET.",
+        "Desarrollo de Procedimientos Almacenados, Triggers y Vistas en Microsoft SQL Server."
       ]
     }
   ]
