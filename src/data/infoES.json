@@ -2,7 +2,7 @@
   "site_url": "https://veraserg.io",
   "site_title": "veraserg.io",
   "name": "Sergio Vera",
-  "about": "Computer Science Engineer with over a decade of experience as a Software Developer from Santiago, Chile.",
+  "about": "Ingeniero en Informática con más de una década de experiencia como Software Developer de Santiago, Chile.",
   "socials": {
     "github": "https://github.com/elsergiovera",
     "linkedin": "https://www.linkedin.com/in/elsergiovera/",
@@ -11,9 +11,9 @@
   "experience": [
     {
       "name": "Vibia",
-      "location": "Barcelona, Spain",
+      "location": "Barcelona, España",
       "start": "Julio 2023",
-      "end": "Present",
+      "end": "Abril 2024",
       "description": [
         "Desarrollo Front End de aplicaciones web dinámicas con interfaz de usuario en 3D utilizando React, con las librerías Three.js y React Three Fiber.",
         "Desarrollo Back End de APIs RESTful con la plataforma low-code de Node-RED para implementaciones e integraciones rápidas.",
@@ -26,8 +26,8 @@
     {
       "name": "Larrain Vial",
       "location": "Santiago, Chile",
-      "start": "March 2019",
-      "end": "March 2023",
+      "start": "Marzo 2019",
+      "end": "Marzo 2023",
       "description": [
         "Realización de análisis exhaustivos, estimaciones precisas y delegación eficiente de tareas para proyectos de la empresa.",
         "Desarrollo Front End de aplicaciones web dinámicas con Microsoft .NET, siguiendo el patrón MVC, utilizando ASP.NET Razor, C#, Ajax, JQuery y Bootstrap.",
@@ -38,8 +38,8 @@
     {
       "name": "Grupo HDI",
       "location": "Santiago, Chile",
-      "start": "June 2017",
-      "end": "February 2018",
+      "start": "Junio 2017",
+      "end": "Febrero 2018",
       "description": [
         "Creación de pruebas de automatización con HPE Unified Functional Testing (UFT) y VBScript.",
         "Desarrollo de pruebas de automatización para sitios web con Selenium utilizando Java."
@@ -48,8 +48,8 @@
     {
       "name": "Socofin S.A.",
       "location": "Santiago, Chile",
-      "start": "June 2016",
-      "end": "August 2016",
+      "start": "Junio 2016",
+      "end": "Agosto 2016",
       "description": [
         "Migración de Servicios de FoxPro a Servicios de Windows con Microsoft .NET, utilizando C#, VB .NET, LinQ y Crystal Report.",
         "Migración de Procedimientos de FoxPro a Procedimientos Almacenados en SQL Server y Oracle DB."
@@ -58,8 +58,8 @@
     {
       "name": "Manager ERP",
       "location": "Santiago, Chile",
-      "start": "June 2016",
-      "end": "August 2016",
+      "start": "Junio 2016",
+      "end": "Agosto 2016",
       "description": [
         "Migración de Procedimientos de FoxPro a Procedimientos Almacenados en SQL Server."
       ]
@@ -67,8 +67,8 @@
     {
       "name": "Componente Serviex",
       "location": "Santiago, Chile",
-      "start": "June 2014",
-      "end": "August 2015",
+      "start": "Junio 2014",
+      "end": "Agosto 2015",
       "description": [
         "Desarrollo de aplicaciones web dinámicas de Front End con Microsoft .NET utilizando el patrón MVC, ASP.NET Razor, C# y VB.NET.",
         "Desarrollo de servicios web SOAP de Back End con Microsoft .NET, utilizando C# y VB.NET.",
