@@ -12,12 +12,13 @@
     {
       "name": "Vibia",
       "location": "Barcelona, España",
-      "start": "Julio 2023",
+      "start": "Junio 2023",
       "end": "Abril 2024",
       "description": [
         "Desarrollo Front End de aplicaciones web dinámicas con interfaz de usuario en 3D utilizando React, con las librerías Three.js y React Three Fiber.",
         "Desarrollo Back End de APIs RESTful con la plataforma low-code de Node-RED para implementaciones e integraciones rápidas.",
-        "Práctica y aplicación de metodología Test-Driven Development para garantizar la confiabilidad y robustez del software.",
+        "Desarrollo de Pruebas Unitarias con Jest en conjunto con la aplicación de la metodología Test-Driven Development para garantizar la confiabilidad y mantenimiento de la aplicación.",
+        "Gestión global de Estado con Jotai para mejorar el rendimiento de la aplicación.",
         "Principios Domain-Driven Design para diseñar soluciones escalables y mantenibles.",
         "Metodología Trunk Based Development con prácticas de Integración y Despliegue Continuo (CI/CD) para facilitar despliegues ágiles y sin interrupciones.",
         "Sesiones de Pair Programming siguiendo la metodología ágil Scrum, fomentando la resolución colaborativa de problemas y el intercambio de conocimientos."
