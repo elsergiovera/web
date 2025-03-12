@@ -10,6 +10,20 @@
   },
   "experience": [
     {
+      "name": "Ingeniería Civil Vicente (ICV)",
+      "location": "Santiago, Chile",
+      "start": "July 2024",
+      "end": "Present",
+      "description": [
+        "Front-End Development focused on migrating desktop software to web platforms using React with TypeScript, optimizing the build process with Vite.",
+        "Implemented interactive and responsive UIs with Handsontable, Shadcn, Ant Design, Lucide Icons, and TailwindCSS.",
+        "Zustand library for centralized state management, improving data synchronization and application performance.",
+        "Integrated APIs with Axios, ensuring efficient and secure communication with the Back-End.",
+        "Back-End Development of APIs in .NET Core with C#, using Entity Framework for a stable and scalable data flow.",
+        "Worked with PostgreSQL for data storage and management."
+      ]
+    },
+    {
       "name": "Vibia",
       "location": "Barcelona, Spain",
       "start": "June 2023",
@@ -34,46 +48,6 @@
         "Front End dynamic web applications development with Microsoft .NET, following MVC pattern, using ASP.NET Razor, C#, Ajax, JQuery and Bootstrap.",
         "Back End SOAP Web Services and RESTful API development with Microsoft .NET, using C#, Entity, Dapper, Swagger and LinQ.",
         "High Complexity Stored Procedures development in Microsoft SQL Server."
-      ]
-    },
-    {
-      "name": "Grupo HDI",
-      "location": "Santiago, Chile",
-      "start": "June 2017",
-      "end": "February 2018",
-      "description": [
-        "Creation of Automation test with HPE Unified Functional Testing (UFT) and VBScript.",
-        "Development of Automation tests for websites with Selenium using Java."
-      ]
-    },
-    {
-      "name": "Socofin S.A.",
-      "location": "Santiago, Chile",
-      "start": "June 2016",
-      "end": "August 2016",
-      "description": [
-        "Migration of FoxPro Services to Windows Services with Microsoft .NET, using C#, VB .NET, LinQ and Crystal Report.",
-        "Migration of FoxPro Procedures to Stored Procedures in SQL Server and Oracle DB."
-      ]
-    },
-    {
-      "name": "Manager ERP",
-      "location": "Santiago, Chile",
-      "start": "June 2016",
-      "end": "August 2016",
-      "description": [
-        "Migration of FoxPro Procedures to Stored Procedures in SQL Server."
-      ]
-    },
-    {
-      "name": "Componente Serviex",
-      "location": "Santiago, Chile",
-      "start": "June 2014",
-      "end": "August 2015",
-      "description": [
-        "Front End dynamic web applications development with Microsoft .NET using MVC pattern, ASP.NET Razor, C# and VB.NET.",
-        "Back End SOAP Web Services development with Microsoft .NET, using C# and VB.NET.",
-        "Stored Procedures, Triggers, and Views development in Microsoft SQL Server."
       ]
     }
   ]
