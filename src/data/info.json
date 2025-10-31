@@ -10,10 +10,21 @@
   },
   "experience": [
     {
+      "name": "KNOCK IT",
+      "location": "Santiago, Chile",
+      "start": "August 2025",
+      "end": "Present",
+      "description": [
+        "Front-End Development",
+        "Back-End Development",
+        "AWS"
+      ]
+    },
+    {
       "name": "Ingeniería Civil Vicente (ICV)",
       "location": "Santiago, Chile",
       "start": "July 2024",
-      "end": "Present",
+      "end": "July 2025",
       "description": [
         "Front-End Development focused on migrating desktop software to web platforms using React with TypeScript, optimizing the build process with Vite.",
         "Implemented interactive and responsive UIs with Handsontable, Shadcn, Ant Design, Lucide Icons, and TailwindCSS.",

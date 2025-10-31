@@ -2,17 +2,39 @@
 import ProjectCard from "./ProjectCard.astro";
 import { getCollection } from "astro:content";
 
-const projects = await getCollection('projects');
+const projects = await getCollection("projects");
 const projectsFeatured = projects
-  .filter(project => project.data.isFeatured)
-  .sort((a, b) => a.data.id - b.data.id)
+  .filter((project) => project.data.isFeatured)
+  .sort((a, b) => a.data.id - b.data.id);
+const isOdd = projectsFeatured.length % 2 !== 0;
+const [first, ...rest] = projectsFeatured;
 ---
 
-<div class=" dark:text-light mt-12">
-  <h2>FEATURED PROJECTS</h2>
-
-  <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-10">
-    {projectsFeatured.map((project) => <ProjectCard project={project} hyperlink={true} />)}
-  </div>
+<div class="dark:text-light mt-12">
+  <h2 class="text-2xl font-bold">FEATURED PROJECTS</h2>
+  {
+    isOdd ? (
+      <div>
+        <div class="my-6">
+          <div class="w-full">
+            <ProjectCard
+              project={first}
+              hyperlink={true}
+              class="h-64 md:h-96 w-full"
+            />
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-6">
+          {rest.map((project) => (
+            <ProjectCard key={project.id} project={project} hyperlink />
+          ))}
+        </div>
+      </div>
+    ) : (
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-10">
+        {projectsFeatured.map((project) => ( <ProjectCard project={project} hyperlink={true} /> ))}
+      </div>
+    )
+  }
   <hr />
 </div>
