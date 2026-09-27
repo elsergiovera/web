@@ -1,18 +1,11 @@
 ---
-import info from "@data/info.json";
-import { getCollection } from 'astro:content';
 import Layout from "@layouts/Layout.astro";
 import Tag from "@components/general/Tag.astro";
 import Prose from "@components/general/Prose.astro";
 import ProjectCard from '@components/general/ProjectCard.astro';
+import { getInfo, getLang } from "@i18n/utils";
 
-export async function getStaticPaths() {
-  const projectsEntries = await getCollection('projects');
-  return projectsEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
-}
-
+const info = getInfo(getLang(Astro.currentLocale));
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 const title = `${entry.data.name}`

@@ -1,12 +1,19 @@
 ---
+import { getLang, localizePath, pathWithoutLocale, useTranslations } from "@i18n/utils";
+import { languages, type Lang } from "@i18n/ui";
+
 const { title } = Astro.props;
+const lang = getLang(Astro.currentLocale);
+const t = useTranslations(lang);
+const otherLang = (Object.keys(languages) as Lang[]).find((l) => l !== lang)!;
+const otherLangHref = localizePath(otherLang, pathWithoutLocale(Astro.url.pathname));
 ---
 <header
   class="container flex items-center justify-between h-[80px] sm:h-[123px]"
 >
   <a
     class="not-a text-2xl dark:text-light font-semibold font-outfit"
-    href="/"
+    href={localizePath(lang, "/")}
   >
     {title}
   </a>
@@ -51,6 +58,23 @@ const { title } = Astro.props;
         />
       </li>
       <li>
+        <a
+          id="lang-button"
+          class="not-a icon-button flex items-center justify-center"
+          href={otherLangHref}
+          hreflang={otherLang}
+          lang={otherLang}
+          aria-label={t("nav.switchLang")}
+          title={t("nav.switchLang")}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </a>
+      </li>
+      <li>
         <button
           aria-label="theme-button"
           id="theme-button"
@@ -73,7 +97,7 @@ const { title } = Astro.props;
   const linkedInButton = document.getElementById("linkedIn-button");
   const emailButton = document.getElementById("email-button");
   const themeButton = document.getElementById("theme-button");
-  const browserTheme = document.querySelector('[name="theme-color"]');
+  const browserTheme = document.querySelector<HTMLMetaElement>('[name="theme-color"]');
   let isDark;
 
   const theme = (() => {

@@ -1,15 +1,17 @@
 ---
 import { Image } from "astro:assets";
 import profile from "@data/profile.jpg";
+import { getLang, useTranslations } from "@i18n/utils";
 
 const { name, about } = Astro.props;
+const t = useTranslations(getLang(Astro.currentLocale));
 ---
 
 <section>
   <div>
-    <Image src={profile} loading="eager" alt="" class="profile" />
+    <Image src={profile} loading="eager" alt={t("profile.alt")} class="profile" />
     <span class="title dark:text-light"
-      ><span id="hero-im">I'm</span>
+      ><span id="hero-im">{t("hero.im")}</span>
       <span id="hero-name" class="rainbow font-medium">
         {name.split(" ")[0]}
       </span>

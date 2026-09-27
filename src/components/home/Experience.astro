@@ -1,15 +1,20 @@
 ---
+import { getLang, useTranslations } from "@i18n/utils";
+
 const { experience } = Astro.props
+const lang = getLang(Astro.currentLocale)
+const t = useTranslations(lang)
+const cvFile = "SERGIO-VERA-CV.pdf"
 ---
 
 <div id="experience" class={"flex-col sm:flex-row dark:text-light mt-12"}>
     <div class={"flex items-center justify-between text-xs"}>
-        <h2>RECENT EXPERIENCE</h2>
+        <h2>{t("experience.recent")}</h2>
         <a
-            href="/cv/SERGIO-VERA-ECV.pdf"
+            href={`/cv/${lang}/${cvFile}`}
             id="cv-link"
             class="not-a text-button flex"
-            download="SERGIO-VERA-ECV.pdf"
+            download={cvFile}
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +36,7 @@ const { experience } = Astro.props
                 <polyline points="10 9 9 9 8 9"></polyline>
             </svg>
             <hr class="text-button-separator" />
-            <span class="ml-1">Download CV</span>
+            <span class="ml-1">{t("experience.downloadCv")}</span>
         </a>
     </div>
     <div class="w-full mt-12">

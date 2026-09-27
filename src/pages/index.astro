@@ -1,17 +1,5 @@
 ---
-import info from "@data/info.json";
-import Layout from "@layouts/Layout.astro";
-import Hero from "@components/home/Hero.astro";
-import Experience from "@components/home/Experience.astro";
-import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
+import Home from "@components/home/Home.astro";
 ---
 
-<Layout socials={info.socials}>
-  <Hero name={info.name} about={info.about} />
-  <section>
-    <ProjectsWrapper />
-  </section>
-  <section>
-    <Experience experience={info.experience} />
-  </section>
-</Layout>
+<Home />

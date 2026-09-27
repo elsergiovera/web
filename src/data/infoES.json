@@ -2,13 +2,27 @@
   "site_url": "https://veraserg.io",
   "site_title": "veraserg.io",
   "name": "Sergio Vera",
-  "about": "Ingeniero en Informática con más de una década de experiencia como Software Developer de Santiago, Chile.",
+  "about": "Ingeniero en Informática con más de una década de experiencia como Ingeniero de Software, Desarrollador y Tech Lead, con experiencia en IA.",
   "socials": {
     "github": "https://github.com/elsergiovera",
     "linkedin": "https://www.linkedin.com/in/elsergiovera/",
     "email": "verasergio@gmail.com"
   },
   "experience": [
+    {
+      "name": "Ingeniería Civil Vicente (ICV)",
+      "location": "Santiago, Chile",
+      "start": "Julio 2024",
+      "end": "Julio 2025",
+      "description": [
+        "Desarrollo Front-End enfocado en la migración de software de escritorio a plataformas web utilizando React con TypeScript, optimizando el proceso de build con Vite.",
+        "Implementación de interfaces interactivas y responsivas con Handsontable, Shadcn, Ant Design, Lucide Icons y TailwindCSS.",
+        "Librería Zustand para la gestión centralizada del estado, mejorando la sincronización de datos y el rendimiento de la aplicación.",
+        "Integración de APIs con Axios, asegurando una comunicación eficiente y segura con el Back-End.",
+        "Desarrollo Back-End de APIs en .NET Core con C#, utilizando Entity Framework para un flujo de datos estable y escalable.",
+        "Uso de PostgreSQL para el almacenamiento y la gestión de datos."
+      ]
+    },
     {
       "name": "Vibia",
       "location": "Barcelona, España",
@@ -17,10 +31,10 @@
       "description": [
         "Desarrollo Front End de aplicaciones web dinámicas con interfaz de usuario en 3D utilizando React, con las librerías Three.js y React Three Fiber.",
         "Desarrollo Back End de APIs RESTful con la plataforma low-code de Node-RED para implementaciones e integraciones rápidas.",
-        "Desarrollo de Pruebas Unitarias con Jest en conjunto con la aplicación de la metodología Test-Driven Development para garantizar la confiabilidad y mantenimiento de la aplicación.",
+        "Desarrollo de Pruebas Unitarias con Jest en conjunto con la metodología Test-Driven Development para garantizar la confiabilidad y robustez del software.",
         "Gestión global de Estado con Jotai para mejorar el rendimiento de la aplicación.",
         "Principios Domain-Driven Design para diseñar soluciones escalables y mantenibles.",
-        "Metodología Trunk Based Development con prácticas de Integración y Despliegue Continuo (CI/CD) para facilitar despliegues ágiles y sin interrupciones.",
+        "Metodología Trunk Based Development con prácticas de CI/CD para despliegues ágiles y sin interrupciones.",
         "Sesiones de Pair Programming siguiendo la metodología ágil Scrum, fomentando la resolución colaborativa de problemas y el intercambio de conocimientos."
       ]
     },
@@ -32,48 +46,8 @@
       "description": [
         "Realización de análisis exhaustivos, estimaciones precisas y delegación eficiente de tareas para proyectos de la empresa.",
         "Desarrollo Front End de aplicaciones web dinámicas con Microsoft .NET, siguiendo el patrón MVC, utilizando ASP.NET Razor, C#, Ajax, JQuery y Bootstrap.",
-        "Desarrollo Back End de servicios web SOAP y API RESTful con Microsoft .NET, utilizando C#, Entity, Dapper, Swagger y LinQ.",
+        "Desarrollo Back End de servicios web SOAP y APIs RESTful con Microsoft .NET, utilizando C#, Entity, Dapper, Swagger y LinQ.",
         "Desarrollo de procedimientos almacenados de alta complejidad en Microsoft SQL Server."
-      ]
-    },
-    {
-      "name": "Grupo HDI",
-      "location": "Santiago, Chile",
-      "start": "Junio 2017",
-      "end": "Febrero 2018",
-      "description": [
-        "Creación de pruebas de automatización con HPE Unified Functional Testing (UFT) y VBScript.",
-        "Desarrollo de pruebas de automatización para sitios web con Selenium utilizando Java."
-      ]
-    },
-    {
-      "name": "Socofin S.A.",
-      "location": "Santiago, Chile",
-      "start": "Junio 2016",
-      "end": "Agosto 2016",
-      "description": [
-        "Migración de Servicios de FoxPro a Servicios de Windows con Microsoft .NET, utilizando C#, VB .NET, LinQ y Crystal Report.",
-        "Migración de Procedimientos de FoxPro a Procedimientos Almacenados en SQL Server y Oracle DB."
-      ]
-    },
-    {
-      "name": "Manager ERP",
-      "location": "Santiago, Chile",
-      "start": "Junio 2016",
-      "end": "Agosto 2016",
-      "description": [
-        "Migración de Procedimientos de FoxPro a Procedimientos Almacenados en SQL Server."
-      ]
-    },
-    {
-      "name": "Componente Serviex",
-      "location": "Santiago, Chile",
-      "start": "Junio 2014",
-      "end": "Agosto 2015",
-      "description": [
-        "Desarrollo de aplicaciones web dinámicas de Front End con Microsoft .NET utilizando el patrón MVC, ASP.NET Razor, C# y VB.NET.",
-        "Desarrollo de servicios web SOAP de Back End con Microsoft .NET, utilizando C# y VB.NET.",
-        "Desarrollo de Procedimientos Almacenados, Triggers y Vistas en Microsoft SQL Server."
       ]
     }
   ]

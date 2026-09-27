@@ -2,14 +2,16 @@
 import Footer from "@components/general/Footer.astro";
 import Navbar from "@components/general/Navbar.astro";
 import MetaHead from "@components/general/MetaHead.astro";
-import info from "@data/info.json";
+import { getInfo, getLang } from "@i18n/utils";
 import "../styles/style.css";
 
+const lang = getLang(Astro.currentLocale);
+const info = getInfo(lang);
 const site_title = info.site_title ?? "";
 const { title } = Astro.props;
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <MetaHead
       title={site_title}

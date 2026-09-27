@@ -1,8 +1,10 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
-import { getCollection } from "astro:content";
+import { getLang, getProjects, useTranslations } from "@i18n/utils";
 
-const projects = await getCollection("projects");
+const lang = getLang(Astro.currentLocale);
+const t = useTranslations(lang);
+const projects = await getProjects(lang);
 const projectsFeatured = projects
   .filter((project) => project.data.isFeatured)
   .sort((a, b) => a.data.id - b.data.id);
@@ -11,7 +13,7 @@ const [first, ...rest] = projectsFeatured;
 ---
 
 <div class="dark:text-light mt-12">
-  <h2 class="text-2xl font-bold">FEATURED PROJECTS</h2>
+  <h2 class="text-2xl font-bold">{t("projects.featured")}</h2>
   {
     isOdd ? (
       <div>

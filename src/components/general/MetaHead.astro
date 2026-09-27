@@ -1,7 +1,15 @@
 ---
-import info from "@data/info.json";
+import { getInfo, getLang, localizePath, pathWithoutLocale } from "@i18n/utils";
+import { languages, defaultLang, type Lang } from "@i18n/ui";
 
 const { title, subtitle } = Astro.props
+const lang = getLang(Astro.currentLocale)
+const info = getInfo(lang)
+const basePath = pathWithoutLocale(Astro.url.pathname)
+const alternates = (Object.keys(languages) as Lang[]).map((l) => ({
+  lang: l,
+  href: `${info.site_url}${localizePath(l, basePath)}`,
+}))
 const site_path_segment = "→"
 const site_url = info.site_url ?? "-"
 const path_description =  subtitle 
@@ -30,11 +38,18 @@ const path_description =  subtitle
   )
 }
 {title && <title>{`${title} ${path_description}`}</title>}
+{
+  alternates.map(({ lang, href }) => (
+    <link rel="alternate" hreflang={lang} href={href} />
+  ))
+}
+<link rel="alternate" hreflang="x-default" href={`${info.site_url}${localizePath(defaultLang, basePath)}`} />
 {title && <meta name="title" content={`${title} ${path_description}`} />}
 {subtitle && <meta name="description" content={subtitle} />}
 
 <!-- Open Graph / Facebook -->
 {title && <meta property="og:type" content="website" />}
+{title && <meta property="og:locale" content={lang === "es" ? "es_CL" : "en_US"} />}
 {
   title && (
     <meta property="og:url" content={`${site_url}${Astro.url.pathname}`} />
