@@ -10,6 +10,21 @@
   },
   "experience": [
     {
+      "name": "KNOCK IT",
+      "location": "Santiago, Chile",
+      "start": "Agosto 2025",
+      "end": "Presente",
+      "description": [
+        "Liderazgo técnico en decisiones de arquitectura, definiendo estándares de desarrollo, estructura de proyectos y tecnologías a utilizar.",
+        "Desarrollo Full-Stack de plataforma web para la administración de propiedades de inversión, utilizando React con TypeScript y Vite para construir interfaces modernas, responsivas y de alto rendimiento.",
+        "Diseño de arquitectura Back-End y desarrollo de APIs RESTful con Node.js y Express, integrando bases de datos SQL Server y MySQL.",
+        "Diseño e implementación de infraestructura en AWS, utilizando S3, CloudFront, ECR, EC2, Route 53, Certificate Manager e IAM.",
+        "Contenerización y despliegue de aplicaciones con Docker, asegurando entornos consistentes desde desarrollo hasta producción.",
+        "Fortalecimiento de la seguridad en base de datos e infraestructura, estableciendo buenas prácticas de acceso, manejo de credenciales y configuración segura en la nube.",
+        "Evaluación e incorporación de nuevas tecnologías, incluyendo soluciones basadas en Inteligencia Artificial."
+      ]
+    },
+    {
       "name": "Ingeniería Civil Vicente (ICV)",
       "location": "Santiago, Chile",
       "start": "Julio 2024",

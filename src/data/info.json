@@ -10,6 +10,21 @@
   },
   "experience": [
     {
+      "name": "KNOCK IT",
+      "location": "Santiago, Chile",
+      "start": "August 2025",
+      "end": "Present",
+      "description": [
+        "Technical leadership in architecture decisions, defining development standards, project structure and technology stack.",
+        "Full-Stack Development of a web platform for investment property management, using React with TypeScript and Vite to build modern, responsive and high-performance UIs.",
+        "Back-End architecture design and RESTful API development with Node.js and Express, integrating SQL Server and MySQL databases.",
+        "Designed and implemented AWS infrastructure, using S3, CloudFront, ECR, EC2, Route 53, Certificate Manager and IAM.",
+        "Containerization and deployment with Docker, ensuring consistent environments from development to production.",
+        "Strengthened database and infrastructure security, establishing best practices for access control, credential management and secure cloud configuration.",
+        "Evaluated and adopted new technologies, including AI-based solutions."
+      ]
+    },
+    {
       "name": "Ingeniería Civil Vicente (ICV)",
       "location": "Santiago, Chile",
       "start": "July 2024",
